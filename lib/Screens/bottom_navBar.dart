@@ -36,9 +36,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: CurvedNavigationBar(
         items: [
     Icon(Icons.home, size: 25, color: index == 0 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
-    Icon(Icons.format_list_bulleted_sharp, size: 25,color: index == 1 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
+    Icon(Icons.query_stats_sharp, size: 25,color: index == 1 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
     Icon(Icons.mobile_friendly_outlined, size: 25,color: index == 2 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
-    Icon(Icons.person_2_sharp, size: 25,color: index == 3 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,)
+    Icon(Icons.feed_outlined, size: 25,color: index == 3 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,)
   ],
         index: index,
         onTap: (selctedIndex){
