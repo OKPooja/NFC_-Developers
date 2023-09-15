@@ -51,6 +51,13 @@ class LoginPage extends StatelessWidget {
                       ),
                     ],
                   ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 3,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('assets/login.png'),
+                            fit: BoxFit.cover)),
+                  ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Column(
@@ -82,7 +89,7 @@ class LoginPage extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: (context) => BottomNavBar()));
                         },
-                        color: Colors.greenAccent,
+                        color: Colors.blueAccent,
                         elevation: 0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50)),
@@ -108,13 +115,7 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              height: MediaQuery.of(context).size.height / 3,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('assets/background.png'),
-                      fit: BoxFit.cover)),
-            )
+
           ],
         ),
       ),

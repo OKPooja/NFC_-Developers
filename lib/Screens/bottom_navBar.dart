@@ -35,10 +35,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         items: [
-    Icon(Icons.home, size: 25, color: index == 0 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
-    Icon(Icons.format_list_bulleted_sharp, size: 25,color: index == 1 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
-    Icon(Icons.mobile_friendly_outlined, size: 25,color: index == 2 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
-    Icon(Icons.person_2_sharp, size: 25,color: index == 3 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,)
+    Icon(Icons.home, size: 25, color: index == 0 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
+    Icon(Icons.format_list_bulleted_sharp, size: 25,color: index == 1 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
+    Icon(Icons.mobile_friendly_outlined, size: 25,color: index == 2 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
+    Icon(Icons.person_2_sharp, size: 25,color: index == 3 ? const Color.fromRGBO(9, 22, 56, 1) : Colors.white,)
   ],
         index: index,
         onTap: (selctedIndex){
@@ -48,8 +48,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
         },
         height: 50,
         backgroundColor: Colors.white,
-        buttonBackgroundColor : Color.fromRGBO(238, 238, 238, 1),
-        color: Color.fromRGBO(9, 22, 56, 1),
+        buttonBackgroundColor : const Color.fromRGBO(238, 238, 238, 1),
+        color: const Color.fromRGBO(9, 22, 56, 1),
         animationDuration: const Duration(milliseconds: 300),
         // animationCurve: ,
       ),

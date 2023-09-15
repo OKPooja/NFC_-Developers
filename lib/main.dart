@@ -4,12 +4,10 @@ import 'login.dart';
 import 'signup.dart';
 
 void main() {
-  runApp(
-      MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: HomePage(),
-      )
-  );
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: HomePage(),
+  ));
 }
 
 class HomePage extends StatelessWidget {
@@ -27,26 +25,25 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Column(
                 children: <Widget>[
-                  Text("Welcome", style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30
-                  ),),
-                  SizedBox(height: 20,),
-                  Text("Automatic identity verification which enables you to verify your identity",
+                  Text(
+                    "Welcome",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 55),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    "Unlock the door to financial wisdom and a prosperous future with our Financial Literacy App.",
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.grey[700],
-                        fontSize: 15
-                    ),),
+                    style: TextStyle(color: Colors.grey[700], fontSize: 15),
+                  ),
                 ],
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/illustration.png')
-                    )
-                ),
+                        image: AssetImage('assets/welcome.png'))),
               ),
               Column(
                 children: <Widget>[
@@ -54,20 +51,21 @@ class HomePage extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                     shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                            color: Colors.black
-                        ),
-                        borderRadius: BorderRadius.circular(50)
+                        side: BorderSide(color: Colors.black),
+                        borderRadius: BorderRadius.circular(50)),
+                    child: Text(
+                      "Login",
+                      style:
+                          TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                     ),
-                    child: Text("Login", style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18
-                    ),),
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Container(
                     padding: EdgeInsets.only(top: 3, left: 3),
                     decoration: BoxDecoration(
@@ -77,23 +75,25 @@ class HomePage extends StatelessWidget {
                           top: BorderSide(color: Colors.black),
                           left: BorderSide(color: Colors.black),
                           right: BorderSide(color: Colors.black),
-                        )
-                    ),
+                        )),
                     child: MaterialButton(
                       minWidth: double.infinity,
                       height: 60,
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignupPage()));
                       },
-                      color: Colors.yellow,
+                      color: Colors.blueAccent,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)
+                          borderRadius: BorderRadius.circular(50)),
+                      child: Text(
+                        "Sign up",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 18),
                       ),
-                      child: Text("Sign up", style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18
-                      ),),
                     ),
                   )
                 ],

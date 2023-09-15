@@ -70,7 +70,7 @@ class SignupPage extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: (context) => BottomNavBar()));
                         },
-                  color: Colors.greenAccent,
+                  color: Colors.blueAccent,
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50)
