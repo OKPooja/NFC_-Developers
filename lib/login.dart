@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'Screens/bottom_navBar.dart';
 import 'Screens/Services/homescreenwrapper.dart';
 
 class LoginPage extends StatelessWidget {
@@ -26,7 +24,7 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(
+      body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: double.infinity,
         child: Column(
@@ -97,7 +95,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("Don't have an account?"),
                       Text(
                         "Sign up",

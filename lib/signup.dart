@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'Screens/bottom_navBar.dart';
 import 'Screens/Services/homescreenwrapper.dart';
 
 class SignupPage extends StatelessWidget {

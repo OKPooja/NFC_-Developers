@@ -5,7 +5,7 @@ class BottomNavBar extends StatelessWidget {
   final int selectedIndex;
   final Function(int) onTabTapped;
 
-  BottomNavBar({
+  const BottomNavBar({super.key, 
     required this.selectedIndex,
     required this.onTabTapped,
   });
