@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../Screens/Services/homescreenwrapper.dart';
 import 'login.dart';
 
 class SignupPage extends StatefulWidget {
@@ -26,7 +27,7 @@ class _SignupPageState extends State<SignupPage> {
         if (userCredential.user != null) {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => LoginPage()),
+            MaterialPageRoute(builder: (context) => HomePageWrapper()),
           );
         }
       } else {

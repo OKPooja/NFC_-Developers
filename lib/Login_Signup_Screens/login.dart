@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:need/Screens/home.dart';
 import 'package:need/Login_Signup_Screens/signup.dart';
-
+import '../Screens/Services/homescreenwrapper.dart';
 import '../Screens/bottom_navBar.dart';
 
 class LoginPage extends StatefulWidget {
@@ -24,7 +24,7 @@ class _LoginPageState extends State<LoginPage> {
         password: passwordController.text,
       );
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+          .pushReplacement(MaterialPageRoute(builder: (context) => HomePageWrapper()));
     } catch (e) {
       if (e is FirebaseAuthException) {
         if (e.code == 'user-not-found') {
