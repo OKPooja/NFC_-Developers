@@ -1,18 +1,26 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:need/login.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class HomePage extends StatelessWidget {
+  HomePage({super.key});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
+  final user = FirebaseAuth.instance.currentUser;
+  void signUserOut(BuildContext context) async {
+    await FirebaseAuth.instance.signOut();
 
-class _HomePageState extends State<HomePage> {
+    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
+  }
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(onPressed: () => signUserOut(context), icon: Icon(Icons.logout),),
+        ],
+      ),
       body: Center(
-        child: Text('Home Page')
+        child: Text('Logged In')
         ),
     );
   }

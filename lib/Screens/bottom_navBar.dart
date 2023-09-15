@@ -59,7 +59,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     Widget widget;
     switch(index){
       case 0:
-        widget = const HomePage();
+        widget = HomePage();
         break;
       case 1:
         widget = const CourseQuiz();
@@ -71,7 +71,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         widget = const ProfilePage();
         break;
       default:
-        widget = const HomePage();
+        widget = HomePage();
         break;
       
     }
