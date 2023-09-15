@@ -1,7 +1,8 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:need/Screens/search.dart';
-import 'package:need/Screens/temp.dart';
+import 'package:need/Screens/banking.dart';
+import 'package:need/Screens/course_quiz.dart';
+import 'package:need/Screens/profile.dart';
 import 'home.dart';
 
 
@@ -15,10 +16,10 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
 
   final items = const [
-    Icon(Icons.home, size: 30,),
-    Icon(Icons.person, size: 30,),
-    Icon(Icons.add, size: 30,),
-    Icon(Icons.search_outlined, size: 30,)
+    Icon(Icons.home, size: 17,),
+    Icon(Icons.format_list_bulleted_sharp, size: 17,),
+    Icon(Icons.mobile_friendly_outlined, size: 17,),
+    Icon(Icons.person_2_sharp, size: 17,)
   ];
 
   int index = 0;
@@ -40,8 +41,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
             index = selctedIndex;
           });
         },
-        height: 70,
-        backgroundColor: Colors.yellow.shade200,
+        height: 50,
+        backgroundColor: Color(0xFF0F044C),
+        buttonBackgroundColor : Color.fromRGBO(238, 238, 238, 1),
+        color: Color.fromRGBO(120, 122, 145, 1),
         animationDuration: const Duration(milliseconds: 300),
         // animationCurve: ,
       ),
@@ -54,13 +57,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
         widget = const HomePage();
         break;
       case 1:
-        widget = const tempPage();
+        widget = const CourseQuiz();
         break;
       case 2:
-        widget = const tempPage();
+        widget = const BankingPage();
         break;
       case 3:
-        widget = const searchPage();
+        widget = const ProfilePage();
         break;
       default:
         widget = const HomePage();
