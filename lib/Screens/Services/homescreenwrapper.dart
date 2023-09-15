@@ -42,7 +42,7 @@ class _HomePageWrapperState extends State<HomePageWrapper> {
     Widget widget;
     switch (index) {
       case 0:
-        widget = const HomePage();
+        widget =  HomePage();
         break;
       case 1:
         widget = const CourseQuiz();
@@ -54,7 +54,7 @@ class _HomePageWrapperState extends State<HomePageWrapper> {
         widget = const ProfilePage();
         break;
       default:
-        widget = const HomePage();
+        widget =  HomePage();
         break;
     }
     return widget;
