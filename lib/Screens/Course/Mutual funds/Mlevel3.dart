@@ -2,112 +2,111 @@ import 'package:flutter/material.dart';
 import 'package:need/Screens/Course/quiz.dart';
 import 'package:need/Screens/Course/youtube_player.dart';
 
-class Mlevel2 extends StatefulWidget {
-  const Mlevel2({super.key});
+class Mlevel3 extends StatefulWidget {
+  const Mlevel3({super.key});
 
   @override
-  State<Mlevel2> createState() => _Mlevel2State();
+  State<Mlevel3> createState() => _Mlevel3State();
 }
 
-class _Mlevel2State extends State<Mlevel2> {
+class _Mlevel3State extends State<Mlevel3> {
   @override
-
-  List<Map<String, dynamic>> Mlevel2Q = [
+  List<Map<String, dynamic>> toughMutualFundQuestions = [
   {
-    'question': 'What is the difference between a load and a no-load mutual fund?',
+    'question': 'Scenario: You have invested 10,000 rs in a mutual fund with an expense ratio of 1.5%. After one year, the fund has earned a total return of 8.5%. What is the net return on your investment?',
     'answers': [
-      {'answerText': 'A load fund charges a sales commission or fee, while a no-load fund does not.', 'score': true},
-      {'answerText': 'A load fund provides higher returns, while a no-load fund is more stable.', 'score': false},
-      {'answerText': 'A load fund has higher expense ratios, while a no-load fund has lower fees.', 'score': false},
-      {'answerText': 'A load fund is riskier, while a no-load fund is more conservative.', 'score': false},
+      {'answerText': '7%', 'score': false},
+      {'answerText': '6.5%', 'score': false},
+      {'answerText': '6%', 'score': true},
+      {'answerText': '8%', 'score': false},
     ],
   },
   {
-    'question': 'What is a capital gains distribution in a mutual fund?',
+    'question': 'Scenario: A mutual fund has an NAV of 25 rs. If you invest 5,000 rs, how many units of the fund will you receive?',
     'answers': [
-      {'answerText': 'It is the profit earned by the fund manager.', 'score': false},
-      {'answerText': 'It is the total amount of money invested in the fund.', 'score': false},
-      {'answerText': 'It is the distribution of profits made from the sale of securities in the fund\'s portfolio.', 'score': true},
-      {'answerText': 'It is the interest earned on the fund.', 'score': false},
+      {'answerText': '200 units', 'score': true},
+      {'answerText': '225 units', 'score': false},
+      {'answerText': '180 units', 'score': false},
+      {'answerText': '250 units', 'score': false},
     ],
   },
   {
-    'question': 'What is the role of a custodian in a mutual fund?',
+    'question': 'What is the formula for calculating the Sharpe Ratio in mutual funds?',
     'answers': [
-      {'answerText': 'To manage the fund\'s investments and make buy/sell decisions.', 'score': false},
-      {'answerText': 'To handle administrative tasks and hold the fund\'s assets in safekeeping.', 'score': true},
-      {'answerText': 'To provide advice to investors on which funds to choose.', 'score': false},
-      {'answerText': 'To market and promote the mutual fund.', 'score': false},
+      {'answerText': 'Risk-free rate divided by standard deviation of the portfolio', 'score': false},
+      {'answerText': 'Average return divided by standard deviation of the portfolio', 'score': false},
+      {'answerText': '(Average return of the portfolio - Risk-free rate) divided by standard deviation of the portfolio', 'score': true},
+      {'answerText': 'Risk-free rate divided by average return of the portfolio', 'score': false},
     ],
   },
   {
-    'question': 'What is an expense ratio cap in a mutual fund?',
+    'question': 'Scenario: You invested 7,000 rs in Fund A, which has an annual return of 10%. At the same time, you invested 5,000 rs in Fund B, which has an annual return of 12%. What is the weighted average return on your investments?',
     'answers': [
-      {'answerText': 'It is the maximum limit on investment.', 'score': false},
-      {'answerText': 'It represents the cost of managing the fund, expressed as a percentage of the fund\'s average assets, but with an upper limit.', 'score': true},
-      {'answerText': 'It is the total amount of money invested in the fund.', 'score': false},
-      {'answerText': 'It is the dividend paid to the investors.', 'score': false},
+      {'answerText': '11%', 'score': true},
+      {'answerText': '11.5%', 'score': false},
+      {'answerText': '10.5%', 'score': false},
+      {'answerText': '12%', 'score': false},
     ],
   },
   {
-    'question': 'What is a balanced fund in mutual funds?',
+    'question': 'In which type of mutual fund do investors aim to track the performance of a specific market index?',
     'answers': [
-      {'answerText': 'A fund that invests primarily in stocks.', 'score': false},
-      {'answerText': 'A fund that invests primarily in fixed-income securities.', 'score': false},
-      {'answerText': 'A fund that combines both stocks and bonds in its portfolio.', 'score': true},
-      {'answerText': 'A fund that focuses on short-term investments.', 'score': false},
+      {'answerText': 'Index fund', 'score': true},
+      {'answerText': 'Hedge fund', 'score': false},
+      {'answerText': 'Active fund', 'score': false},
+      {'answerText': 'Sector-specific fund', 'score': false},
     ],
   },
   {
-    'question': 'What is a sector-specific fund?',
+    'question': 'Scenario: You have invested 15,000 rs in a mutual fund that has an annual expense ratio of 1.75%. After one year, the fund has earned a total return of 9.5%. What is the net return on your investment?',
     'answers': [
-      {'answerText': 'A fund that invests in a specific industry or sector, such as technology or healthcare.', 'score': true},
-      {'answerText': 'A fund that diversifies across multiple industries.', 'score': false},
-      {'answerText': 'A fund that only invests in government securities.', 'score': false},
-      {'answerText': 'A fund that focuses on international investments.', 'score': false},
+      {'answerText': '7.75%', 'score': false},
+      {'answerText': '7%', 'score': true},
+      {'answerText': '6.5%', 'score': false},
+      {'answerText': '8%', 'score': false},
     ],
   },
   {
-    'question': 'What is the difference between growth and value funds?',
+    'question': 'What is the main advantage of investing in a no-load mutual fund?',
     'answers': [
-      {'answerText': 'Growth funds aim for capital appreciation and invest in stocks with high growth potential, while value funds seek undervalued stocks with strong fundamentals.', 'score': true},
-      {'answerText': 'Growth funds provide higher dividends, while value funds have higher volatility.', 'score': false},
-      {'answerText': 'Growth funds have lower risk, while value funds have higher risk.', 'score': false},
-      {'answerText': 'Growth funds invest primarily in fixed-income securities, while value funds focus on equities.', 'score': false},
+      {'answerText': 'No sales commission or fees are charged when buying or selling shares.', 'score': true},
+      {'answerText': 'Higher returns compared to load funds.', 'score': false},
+      {'answerText': 'Lower expense ratios.', 'score': false},
+      {'answerText': 'Greater diversification in the fund\'s portfolio.', 'score': false},
     ],
   },
   {
-    'question': 'What is a 12b-1 fee in a mutual fund?',
+    'question': 'Scenario: You invested 10,000 rs in a mutual fund with an initial NAV of 15 rs. After one year, the NAV has increased to 18 rs. What is the value of your investment?',
     'answers': [
-      {'answerText': 'It is the minimum amount required to start investing.', 'score': false},
-      {'answerText': 'It represents the cost of managing the fund, expressed as a percentage of the fund\'s average assets.', 'score': false},
-      {'answerText': 'It is an annual fee charged by some funds to cover marketing and distribution expenses.', 'score': true},
-      {'answerText': 'It is the interest earned on the fund.', 'score': false},
+      {'answerText': '12,000 rs', 'score': false},
+      {'answerText': '13,333.33 rs', 'score': false},
+      {'answerText': '12,666.67 rs', 'score': true},
+      {'answerText': '15,000 rs', 'score': false},
     ],
   },
   {
-    'question': 'What is a prospectus in mutual funds?',
+    'question': 'What is a redemption fee in a mutual fund?',
     'answers': [
-      {'answerText': 'A document that provides detailed information about a mutual fund, including its investment objectives, risks, fees, and past performance.', 'score': true},
-      {'answerText': 'A report on the fund\'s annual performance.', 'score': false},
-      {'answerText': 'A statement of account sent to investors.', 'score': false},
-      {'answerText': 'A legal agreement between the fund manager and the investor.', 'score': false},
-    ],
-  },
-  {
-    'question': 'What is a back-end load in a mutual fund?',
-    'answers': [
-      {'answerText': 'A fee charged when investors sell their shares, typically on a sliding scale that decreases over time.', 'score': true},
       {'answerText': 'A fee charged when investors buy new shares.', 'score': false},
       {'answerText': 'A fee charged annually to cover marketing and distribution expenses.', 'score': false},
+      {'answerText': 'A fee charged when investors sell their shares, typically to discourage short-term trading.', 'score': true},
       {'answerText': 'A fee charged when investors hold their shares for a specified period.', 'score': false},
+    ],
+  },
+  {
+    'question': 'Scenario: You have invested 20,000 rs in a mutual fund. Over the next three years, the fund earns annual returns of 6%, 8%, and -2% respectively. What is the average annual return over the three-year period?',
+    'answers': [
+      {'answerText': '4%', 'score': false},
+      {'answerText': '4.5%', 'score': false},
+      {'answerText': '3.33%', 'score': true},
+      {'answerText': '2%', 'score': false},
     ],
   },
 ];
 
   Widget build(BuildContext context) {
     return ExpansionTile(
-            title: Text("Level 2"),
+            title: Text("Level 3"),
             children: [
               InkWell(
                 onTap: () {
@@ -116,8 +115,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://youtu.be/i2OcUvUfFJM?si=maU8dDl0UPaw5TQU',
-                        videoTitle: 'Basics of Mutual Funds Episode 1',
+                            'https://youtu.be/PXThRO04UwQ?feature=shared',
+                        videoTitle: 'Debt Mutual Funds or Equity Mutual Funds',
                         videoDescription:
                             'Blog')));
                 },
@@ -129,7 +128,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/i2OcUvUfFJM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCI0HJShXs9OTihw0kXLdzJYVDk-w",
+                          "https://i.ytimg.com/vi/PXThRO04UwQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBQzfYou8ooKDxrMulBNyMV0F610w",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -141,7 +140,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Basics of Mutual Funds Episode 1',
+                              'Debt Mutual Funds or Equity Mutual Funds',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -169,8 +168,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?si=BkDmfsTnztfkwdRI&v=pMZSfei7qkM',
-                        videoTitle: 'Active and Passive Funds: Episode-2 - Basics of Mutual Funds with Groww',
+                            'https://www.youtube.com/watch?v=FLV2Jgy2Src&list=PLSiDKpku4U_X-9y3MEB8tgKEjXFPQu73w&index=7',
+                        videoTitle: 'Mutual Funds SIP Investment vs Lump Sum',
                         videoDescription:
                             'Blog')));
                 },
@@ -182,7 +181,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/pMZSfei7qkM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzrAS76EVT8drN-G1CBsBsE11sPQ",
+                          "https://i.ytimg.com/vi/FLV2Jgy2Src/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCBb1GlxPZvs5LyGr3VevM2cZ049A",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -194,7 +193,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Active and Passive Funds: Episode-2',
+                              'Mutual Funds SIP Investment vs Lump Sum',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -214,15 +213,16 @@ class _Mlevel2State extends State<Mlevel2> {
                     ],
                   ),
                 ),
-              ),InkWell(
+              ),
+              InkWell(
                 onTap: () {
                   Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?v=FxE4RvAh7L4',
-                        videoTitle: 'Basics of Mutual Funds: Episode:3 Types of Equity Funds',
+                            'https://www.youtube.com/watch?v=VeuMig2IKUw&list=PLSiDKpku4U_X-9y3MEB8tgKEjXFPQu73w&index=9',
+                        videoTitle: 'ETF Investing – Nifty BeES & Exchange Traded Funds',
                         videoDescription:
                             'Blog')));
                 },
@@ -234,7 +234,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/FxE4RvAh7L4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-VmR-i0uVAnjc0PHUcxhNulndcg",
+                          "https://i.ytimg.com/vi/VeuMig2IKUw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA4FT0428E3EPky2vtGHndcJZ9weA",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -246,7 +246,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              '',
+                              'ETF Investing – Nifty BeES & Exchange Traded Funds',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -274,8 +274,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?v=1KMMqlSyiDE',
-                        videoTitle: 'Large Cap, Mid Cap & Small Cap Stocks & Mutual Funds',
+                            'https://www.youtube.com/watch?v=Nrn3-G8IUSQ&list=PLSiDKpku4U_X-9y3MEB8tgKEjXFPQu73w&index=10',
+                        videoTitle: 'ETF vs Index Funds vs Mutual Funds',
                         videoDescription:
                             'Blog')));
                 },
@@ -287,7 +287,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/an_webp/1KMMqlSyiDE/mqdefault_6s.webp?du=3000&sqp=CKuJkqgG&rs=AOn4CLAs3UcLysNMgVbamBhYHq_2CZCDSg",
+                          "https://i.ytimg.com/vi/Nrn3-G8IUSQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLADadKbk5D2bccZQK8UuLsWB5Aa0Q",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -299,7 +299,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Large Cap, Mid Cap & Small Cap Stocks & Mutual Funds',
+                              'ETF Investing – Nifty BeES & Exchange Traded Funds',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -325,7 +325,7 @@ class _Mlevel2State extends State<Mlevel2> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Quiz(questions: Mlevel2Q),
+                builder: (context) => Quiz(questions: toughMutualFundQuestions),
               ),
             );
           },
@@ -334,7 +334,7 @@ class _Mlevel2State extends State<Mlevel2> {
             height: 55,
             child: Align(
               alignment: Alignment.center,
-              child: Text(' Take Quiz 2', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight:FontWeight.w700)),
+              child: Text(' Take Quiz 3', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight:FontWeight.w700)),
             ),
           ),
         ),

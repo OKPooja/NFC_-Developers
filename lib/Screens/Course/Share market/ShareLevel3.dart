@@ -2,112 +2,111 @@ import 'package:flutter/material.dart';
 import 'package:need/Screens/Course/quiz.dart';
 import 'package:need/Screens/Course/youtube_player.dart';
 
-class Mlevel2 extends StatefulWidget {
-  const Mlevel2({super.key});
+class SLevel3 extends StatefulWidget {
+  const SLevel3({super.key});
 
   @override
-  State<Mlevel2> createState() => _Mlevel2State();
+  State<SLevel3> createState() => _SLevel3State();
 }
 
-class _Mlevel2State extends State<Mlevel2> {
+class _SLevel3State extends State<SLevel3> {
   @override
-
-  List<Map<String, dynamic>> Mlevel2Q = [
+  List<Map<String, dynamic>> toughStockMarketQuestions = [
   {
-    'question': 'What is the difference between a load and a no-load mutual fund?',
+    'question': 'Scenario: You bought 100 shares of XYZ Corp at 50 rs per share. After a year, the stock pays a dividend of 2 rs per share. Calculate your dividend yield.',
     'answers': [
-      {'answerText': 'A load fund charges a sales commission or fee, while a no-load fund does not.', 'score': true},
-      {'answerText': 'A load fund provides higher returns, while a no-load fund is more stable.', 'score': false},
-      {'answerText': 'A load fund has higher expense ratios, while a no-load fund has lower fees.', 'score': false},
-      {'answerText': 'A load fund is riskier, while a no-load fund is more conservative.', 'score': false},
+      {'answerText': '4%', 'score': true},
+      {'answerText': '3%', 'score': false},
+      {'answerText': '5%', 'score': false},
+      {'answerText': '2%', 'score': false},
     ],
   },
   {
-    'question': 'What is a capital gains distribution in a mutual fund?',
+    'question': 'Scenario: You invested 15,000 rs in a stock. Over the next three years, the stock earns annual returns of 6%, 8%, and -2% respectively. What is the total value of your investment after three years?',
     'answers': [
-      {'answerText': 'It is the profit earned by the fund manager.', 'score': false},
-      {'answerText': 'It is the total amount of money invested in the fund.', 'score': false},
-      {'answerText': 'It is the distribution of profits made from the sale of securities in the fund\'s portfolio.', 'score': true},
-      {'answerText': 'It is the interest earned on the fund.', 'score': false},
+      {'answerText': '18,874.40 rs', 'score': false},
+      {'answerText': '19,301.44 rs', 'score': true},
+      {'answerText': '18,220.50 rs', 'score': false},
+      {'answerText': '17,925.60 rs', 'score': false},
     ],
   },
   {
-    'question': 'What is the role of a custodian in a mutual fund?',
+    'question': 'What is the formula for calculating the Price-to-Earnings (P/E) ratio of a stock?',
     'answers': [
-      {'answerText': 'To manage the fund\'s investments and make buy/sell decisions.', 'score': false},
-      {'answerText': 'To handle administrative tasks and hold the fund\'s assets in safekeeping.', 'score': true},
-      {'answerText': 'To provide advice to investors on which funds to choose.', 'score': false},
-      {'answerText': 'To market and promote the mutual fund.', 'score': false},
+      {'answerText': 'Price per Share / Earnings per Share', 'score': true},
+      {'answerText': 'Earnings per Share / Price per Share', 'score': false},
+      {'answerText': 'Dividends per Share / Price per Share', 'score': false},
+      {'answerText': 'Price per Share / Dividends per Share', 'score': false},
     ],
   },
   {
-    'question': 'What is an expense ratio cap in a mutual fund?',
+    'question': 'Scenario: You have invested 10,000 rs in a stock. After one year, the stock is valued at 12,000 rs. What is your percentage return on investment?',
     'answers': [
-      {'answerText': 'It is the maximum limit on investment.', 'score': false},
-      {'answerText': 'It represents the cost of managing the fund, expressed as a percentage of the fund\'s average assets, but with an upper limit.', 'score': true},
-      {'answerText': 'It is the total amount of money invested in the fund.', 'score': false},
-      {'answerText': 'It is the dividend paid to the investors.', 'score': false},
+      {'answerText': '20%', 'score': false},
+      {'answerText': '15%', 'score': true},
+      {'answerText': '25%', 'score': false},
+      {'answerText': '10%', 'score': false},
     ],
   },
   {
-    'question': 'What is a balanced fund in mutual funds?',
+    'question': 'What is the formula for calculating the Compound Annual Growth Rate (CAGR) of an investment?',
     'answers': [
-      {'answerText': 'A fund that invests primarily in stocks.', 'score': false},
-      {'answerText': 'A fund that invests primarily in fixed-income securities.', 'score': false},
-      {'answerText': 'A fund that combines both stocks and bonds in its portfolio.', 'score': true},
-      {'answerText': 'A fund that focuses on short-term investments.', 'score': false},
+      {'answerText': '[(Ending Value / Beginning Value) ^ (1/n)] - 1', 'score': true},
+      {'answerText': '[(Ending Value - Beginning Value) / Beginning Value] * 100', 'score': false},
+      {'answerText': '[(Ending Value / Beginning Value) * 100] - 100', 'score': false},
+      {'answerText': '[(Ending Value - Beginning Value) ^ (1/n)] * 100', 'score': false},
     ],
   },
   {
-    'question': 'What is a sector-specific fund?',
+    'question': 'Scenario: You bought 500 shares of a stock at 30 rs per share. After three years, the stock has appreciated to 40 rs per share. What is your total gain from this investment?',
     'answers': [
-      {'answerText': 'A fund that invests in a specific industry or sector, such as technology or healthcare.', 'score': true},
-      {'answerText': 'A fund that diversifies across multiple industries.', 'score': false},
-      {'answerText': 'A fund that only invests in government securities.', 'score': false},
-      {'answerText': 'A fund that focuses on international investments.', 'score': false},
+      {'answerText': '5,000 rs', 'score': false},
+      {'answerText': '7,500 rs', 'score': false},
+      {'answerText': '10,000 rs', 'score': true},
+      {'answerText': '12,500 rs', 'score': false},
     ],
   },
   {
-    'question': 'What is the difference between growth and value funds?',
+    'question': 'What is the purpose of using a moving average in technical analysis of stocks?',
     'answers': [
-      {'answerText': 'Growth funds aim for capital appreciation and invest in stocks with high growth potential, while value funds seek undervalued stocks with strong fundamentals.', 'score': true},
-      {'answerText': 'Growth funds provide higher dividends, while value funds have higher volatility.', 'score': false},
-      {'answerText': 'Growth funds have lower risk, while value funds have higher risk.', 'score': false},
-      {'answerText': 'Growth funds invest primarily in fixed-income securities, while value funds focus on equities.', 'score': false},
+      {'answerText': 'To smooth out short-term price fluctuations and identify trends over a period of time.', 'score': true},
+      {'answerText': 'To predict future stock prices based on historical data.', 'score': false},
+      {'answerText': 'To compare the performance of different stocks in the same industry.', 'score': false},
+      {'answerText': 'To estimate the total market capitalization of a stock exchange.', 'score': false},
     ],
   },
   {
-    'question': 'What is a 12b-1 fee in a mutual fund?',
+    'question': 'Scenario: You bought 200 shares of a stock at 25 rs per share. The stock pays an annual dividend of 2 rs per share. After two years, the stock price has risen to 30 rs per share. What is your total return on investment (including dividends) after two years?',
     'answers': [
-      {'answerText': 'It is the minimum amount required to start investing.', 'score': false},
-      {'answerText': 'It represents the cost of managing the fund, expressed as a percentage of the fund\'s average assets.', 'score': false},
-      {'answerText': 'It is an annual fee charged by some funds to cover marketing and distribution expenses.', 'score': true},
-      {'answerText': 'It is the interest earned on the fund.', 'score': false},
+      {'answerText': '1,200 rs', 'score': true},
+      {'answerText': '800 rs', 'score': false},
+      {'answerText': '1,000 rs', 'score': false},
+      {'answerText': '1,400 rs', 'score': false},
     ],
   },
   {
-    'question': 'What is a prospectus in mutual funds?',
+    'question': 'What is the formula for calculating the Earnings per Share (EPS) of a company?',
     'answers': [
-      {'answerText': 'A document that provides detailed information about a mutual fund, including its investment objectives, risks, fees, and past performance.', 'score': true},
-      {'answerText': 'A report on the fund\'s annual performance.', 'score': false},
-      {'answerText': 'A statement of account sent to investors.', 'score': false},
-      {'answerText': 'A legal agreement between the fund manager and the investor.', 'score': false},
+      {'answerText': 'Net Income / Total Outstanding Shares', 'score': true},
+      {'answerText': 'Total Revenue / Total Outstanding Shares', 'score': false},
+      {'answerText': 'Dividends Paid / Total Outstanding Shares', 'score': false},
+      {'answerText': 'Total Assets / Total Outstanding Shares', 'score': false},
     ],
   },
   {
-    'question': 'What is a back-end load in a mutual fund?',
+    'question': 'Scenario: You have invested 12,000 rs in a stock. After three years, the stock is valued at 10,000 rs. In addition, you received 600 rs in dividends over the three-year period. What is your total return on investment?',
     'answers': [
-      {'answerText': 'A fee charged when investors sell their shares, typically on a sliding scale that decreases over time.', 'score': true},
-      {'answerText': 'A fee charged when investors buy new shares.', 'score': false},
-      {'answerText': 'A fee charged annually to cover marketing and distribution expenses.', 'score': false},
-      {'answerText': 'A fee charged when investors hold their shares for a specified period.', 'score': false},
+      {'answerText': '-8%', 'score': true},
+      {'answerText': '5%', 'score': false},
+      {'answerText': '10%', 'score': false},
+      {'answerText': '2%', 'score': false},
     ],
   },
 ];
 
   Widget build(BuildContext context) {
     return ExpansionTile(
-            title: Text("Level 2"),
+            title: Text("Level 3"),
             children: [
               InkWell(
                 onTap: () {
@@ -116,8 +115,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://youtu.be/i2OcUvUfFJM?si=maU8dDl0UPaw5TQU',
-                        videoTitle: 'Basics of Mutual Funds Episode 1',
+                            'https://www.youtube.com/watch?v=dIxRYvFUlOM',
+                        videoTitle: 'Option Trading | What is Option trading?',
                         videoDescription:
                             'Blog')));
                 },
@@ -129,7 +128,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/i2OcUvUfFJM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCI0HJShXs9OTihw0kXLdzJYVDk-w",
+                          "https://i.ytimg.com/vi/dIxRYvFUlOM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDl5NLbO85QyFiRmsOuTqfPJSW69w",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -141,7 +140,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Basics of Mutual Funds Episode 1',
+                              'Option Trading | What is Option trading?',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -169,8 +168,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?si=BkDmfsTnztfkwdRI&v=pMZSfei7qkM',
-                        videoTitle: 'Active and Passive Funds: Episode-2 - Basics of Mutual Funds with Groww',
+                            'https://www.youtube.com/watch?v=koFl23q5oCU&list=PLfEVwubAeLh9Ua43yskVcQMf2CWTQy3xr&index=14',
+                        videoTitle: 'Intraday Vs Long Term Investment',
                         videoDescription:
                             'Blog')));
                 },
@@ -182,7 +181,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/pMZSfei7qkM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzrAS76EVT8drN-G1CBsBsE11sPQ",
+                          "https://i.ytimg.com/vi/koFl23q5oCU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLApWSZTfYctiLxsR7ckYJOwQwPcWA",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -194,7 +193,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Active and Passive Funds: Episode-2',
+                              'Intraday Vs Long Term Investment',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -202,59 +201,7 @@ class _Mlevel2State extends State<Mlevel2> {
                             ),
                             SizedBox(height: 5.0),
                             Text(
-                              'Active and Passive Funds: Episode-2 - Basics of Mutual Funds with Groww',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 14,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),InkWell(
-                onTap: () {
-                  Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => YouTubePlayer(
-                        videoUrl:
-                            'https://www.youtube.com/watch?v=FxE4RvAh7L4',
-                        videoTitle: 'Basics of Mutual Funds: Episode:3 Types of Equity Funds',
-                        videoDescription:
-                            'Blog')));
-                },
-                child: Container(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.network(
-                          "https://i.ytimg.com/vi/FxE4RvAh7L4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-VmR-i0uVAnjc0PHUcxhNulndcg",
-                          height: 90,
-                          width: 120,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      SizedBox(width: 10.0),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
-                            Text(
-                              '',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                            SizedBox(height: 5.0),
-                            Text(
-                              'Basics of Mutual Funds: Episode #3 Types of Equity Funds',
+                              'Intraday Vs Long Term Investment',
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontSize: 14,
@@ -274,8 +221,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?v=1KMMqlSyiDE',
-                        videoTitle: 'Large Cap, Mid Cap & Small Cap Stocks & Mutual Funds',
+                            'https://www.youtube.com/watch?v=lMlWvwWuSYk&list=PLfEVwubAeLh9Ua43yskVcQMf2CWTQy3xr&index=15',
+                        videoTitle: 'Advance Price Action Trading Strategies',
                         videoDescription:
                             'Blog')));
                 },
@@ -287,7 +234,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/an_webp/1KMMqlSyiDE/mqdefault_6s.webp?du=3000&sqp=CKuJkqgG&rs=AOn4CLAs3UcLysNMgVbamBhYHq_2CZCDSg",
+                          "https://i.ytimg.com/vi/lMlWvwWuSYk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9o7LrkC8u4f35RPgOO7SvI1HGSg",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -299,7 +246,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Large Cap, Mid Cap & Small Cap Stocks & Mutual Funds',
+                              'Advance Price Action Trading Strategies',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -307,7 +254,60 @@ class _Mlevel2State extends State<Mlevel2> {
                             ),
                             SizedBox(height: 5.0),
                             Text(
-                              'Basics of Mutual Funds: Episode #3 Types of Equity Funds',
+                              'Advance Price Action Trading Strategies',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => YouTubePlayer(
+                        videoUrl:
+                            'https://youtu.be/vlpO_SNW2SI?feature=shared',
+                        videoTitle: 'Price Action',
+                        videoDescription:
+                            'Blog')));
+                },
+                child: Container(
+                  padding: EdgeInsets.all(8.0),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.network(
+                          "https://i.ytimg.com/vi/vlpO_SNW2SI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDnJ6TBP7-qJain6H8qBz_MlLAa9A",
+                          height: 90,
+                          width: 120,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      SizedBox(width: 10.0),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const <Widget>[
+                            Text(
+                              'Price Action ',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            SizedBox(height: 5.0),
+                            Text(
+                              'Price Action ',
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontSize: 14,
@@ -325,7 +325,7 @@ class _Mlevel2State extends State<Mlevel2> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Quiz(questions: Mlevel2Q),
+                builder: (context) => Quiz(questions: toughStockMarketQuestions),
               ),
             );
           },
@@ -334,7 +334,7 @@ class _Mlevel2State extends State<Mlevel2> {
             height: 55,
             child: Align(
               alignment: Alignment.center,
-              child: Text(' Take Quiz 2', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight:FontWeight.w700)),
+              child: Text(' Take Quiz 3', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight:FontWeight.w700)),
             ),
           ),
         ),
