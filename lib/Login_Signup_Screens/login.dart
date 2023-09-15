@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:need/Screens/home.dart';
-import 'package:need/signup.dart';
+import 'package:need/Login_Signup_Screens/signup.dart';
 
-import 'Screens/bottom_navBar.dart';
+import '../Screens/bottom_navBar.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key? key}) : super(key: key);
@@ -23,7 +23,8 @@ class _LoginPageState extends State<LoginPage> {
         email: emailController.text,
         password: passwordController.text,
       );
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+      Navigator.of(context)
+          .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
     } catch (e) {
       if (e is FirebaseAuthException) {
         if (e.code == 'user-not-found') {
@@ -33,9 +34,11 @@ class _LoginPageState extends State<LoginPage> {
           });
         } else if (e.code == 'wrong-password') {
           // Wrong password entered
-          setState(() {
-            errorMessage = 'Incorrect password. Please try again.';
-          });
+          setState(
+            () {
+              errorMessage = 'Incorrect password. Please try again.';
+            },
+          );
         }
       }
       print('Error during login: $e');
@@ -77,24 +80,29 @@ class _LoginPageState extends State<LoginPage> {
                         children: <Widget>[
                           Text(
                             "Login",
-                            style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontSize: 50, fontWeight: FontWeight.bold),
                           ),
-
                         ],
                       ),
                       Container(
                         height: MediaQuery.of(context).size.height / 4,
                         decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('assets/login.png'), fit: BoxFit.cover),
+                          image: DecorationImage(
+                              image: AssetImage('assets/login.png'),
+                              fit: BoxFit.cover),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 40),
                         child: Column(
                           children: <Widget>[
-                            makeInput(label: "Email", controller: emailController),
-                            makeInput(label: "Password", obscureText: true, controller: passwordController),
+                            makeInput(
+                                label: "Email", controller: emailController),
+                            makeInput(
+                                label: "Password",
+                                obscureText: true,
+                                controller: passwordController),
                             if (errorMessage.isNotEmpty)
                               Text(
                                 errorMessage,
@@ -125,7 +133,8 @@ class _LoginPageState extends State<LoginPage> {
                                 borderRadius: BorderRadius.circular(50)),
                             child: Text(
                               "Login",
-                              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600, fontSize: 18),
                             ),
                           ),
                         ),
@@ -136,7 +145,8 @@ class _LoginPageState extends State<LoginPage> {
                           Text("Don't have an account?"),
                           GestureDetector(
                             onTap: () {
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignupPage()));
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => SignupPage()));
                             },
                             child: Text(
                               "Sign up",
@@ -160,7 +170,10 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget makeInput({required String label, bool obscureText = false, required TextEditingController controller}) {
+  Widget makeInput(
+      {required String label,
+      bool obscureText = false,
+      required TextEditingController controller}) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 10),
       child: Column(

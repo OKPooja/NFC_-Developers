@@ -20,7 +20,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ..scale(scaleFactor)..rotateY(isDrawerOpen?-0.5:0),
       duration: Duration(milliseconds: 250),
 
-
       decoration:BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(isDrawerOpen?40:0.0)
