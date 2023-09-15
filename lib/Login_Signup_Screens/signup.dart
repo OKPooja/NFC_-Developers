@@ -14,7 +14,7 @@ class _SignupPageState extends State<SignupPage> {
   final TextEditingController passwordController1 = TextEditingController();
   final TextEditingController passwordController2 = TextEditingController();
 
-  String errorMessage = '';
+import 'Screens/Services/homescreenwrapper.dart';
 
   Future<void> signUp(BuildContext context) async {
     try {
