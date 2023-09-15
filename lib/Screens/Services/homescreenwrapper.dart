@@ -6,6 +6,8 @@ import '../bottom_navBar.dart';
 import '../home.dart';
 
 class HomePageWrapper extends StatefulWidget {
+  const HomePageWrapper({super.key});
+
   @override
   _HomePageWrapperState createState() => _HomePageWrapperState();
 }
