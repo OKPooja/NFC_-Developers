@@ -16,10 +16,10 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
 
   final items = const [
-    Icon(Icons.home, size: 17,),
-    Icon(Icons.format_list_bulleted_sharp, size: 17,),
-    Icon(Icons.mobile_friendly_outlined, size: 17,),
-    Icon(Icons.person_2_sharp, size: 17,)
+    Icon(Icons.home, size: 25, color: Colors.white,),
+    Icon(Icons.format_list_bulleted_sharp, size: 25,color: Colors.white,),
+    Icon(Icons.mobile_friendly_outlined, size: 25,color: Colors.white,),
+    Icon(Icons.person_2_sharp, size: 25,color: Colors.white,)
   ];
 
   int index = 0;
@@ -34,7 +34,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
         child: getSelectedWidget(index: index)
       ),
       bottomNavigationBar: CurvedNavigationBar(
-        items: items,
+        items: [
+    Icon(Icons.home, size: 25, color: index == 0 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
+    Icon(Icons.format_list_bulleted_sharp, size: 25,color: index == 1 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
+    Icon(Icons.mobile_friendly_outlined, size: 25,color: index == 2 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,),
+    Icon(Icons.person_2_sharp, size: 25,color: index == 3 ? Color.fromRGBO(9, 22, 56, 1) : Colors.white,)
+  ],
         index: index,
         onTap: (selctedIndex){
           setState(() {
@@ -42,9 +47,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
           });
         },
         height: 50,
-        backgroundColor: Color(0xFF0F044C),
+        backgroundColor: Colors.white,
         buttonBackgroundColor : Color.fromRGBO(238, 238, 238, 1),
-        color: Color.fromRGBO(120, 122, 145, 1),
+        color: Color.fromRGBO(9, 22, 56, 1),
         animationDuration: const Duration(milliseconds: 300),
         // animationCurve: ,
       ),
