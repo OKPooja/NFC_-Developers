@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Screens/bottom_navBar.dart';
+import 'Screens/Services/homescreenwrapper.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
@@ -68,7 +69,7 @@ class SignupPage extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => BottomNavBar()));
+                                  builder: (context) => HomePageWrapper()));
                         },
                   color: Colors.greenAccent,
                   elevation: 0,
