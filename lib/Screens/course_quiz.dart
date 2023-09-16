@@ -70,6 +70,20 @@ class _CourseQuizState extends State<CourseQuiz> {
                     title: 'Cryptocurrency',
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: CourseCard(
+                    imageUrl: 'https://images.newindianexpress.com/uploads/user/imagelibrary/2022/12/25/w900X450/tax.jpg?w=400&dpr=2.6',
+                    title: 'Tax Exemptions',
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: CourseCard(
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrUCDEL1FWu7dMLpArDEUZ6XkNrGDapShGlA&usqp=CAU',
+                    title: 'Commodities',
+                  ),
+                ),
               ],
             ),
           ),

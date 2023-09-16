@@ -16,42 +16,43 @@ class _BankingHomeState extends State<BankingHome> {
     double w = MediaQuery.of(context).size.width;
     return Scaffold(
         backgroundColor: Appcolor.backGroundColor,
-        body: Container(
-          child: Stack(
-            children: [
-
-              _headSection(),
-              _listBill(),
+        body: SingleChildScrollView(
+          child: Container(
+            child: Stack(
+              children: [
+                _headSection(),
+                _listBill(),
+                Positioned(
+                  left:0,
+                  top: 100,
+                  child: Text(
+                    "Banking",
+                    style: TextStyle(
+                      fontSize: 58,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF293952),
+                    ),
+                  ),),
               Positioned(
-                left:0,
-                top: 100,
+                left: 40,
+                top: 80,
                 child: Text(
-                  "Banking",
-                  style: TextStyle(
-                    fontSize: 58,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xFF293952),
-                  ),
-                ),),
-            Positioned(
-              left: 40,
-              top: 80,
-              child: Text(
-              "Banking",
-                  style: TextStyle(
-                    fontSize: 45,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-            ),),
+                "Banking",
+                    style: TextStyle(
+                      fontSize: 45,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+              ),),
 
-            //   // Positioned(
-            //   //   top: 300, // Adjust the top position as needed
-            //   //   left: 0,
-            //   //   right: 0,
-            //   //   child: _listBill(),
-            //   // ),
-             ],
+              //   // Positioned(
+              //   //   top: 300, // Adjust the top position as needed
+              //   //   left: 0,
+              //   //   right: 0,
+              //   //   child: _listBill(),
+              //   // ),
+               ],
+            ),
           ),
         ));
   }

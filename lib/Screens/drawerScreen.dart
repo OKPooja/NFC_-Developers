@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../Login_Signup_Screens/login.dart';
 import 'configuration.dart';
 
 class DrawerScreen extends StatefulWidget {
@@ -10,6 +12,11 @@ class DrawerScreen extends StatefulWidget {
 
 class _DrawerScreenState extends State<DrawerScreen> {
   @override
+  void signUserOut(BuildContext context) async {
+    await FirebaseAuth.instance.signOut();
+    Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
+  }
   Widget build(BuildContext context) {
     return Container(
       color: Color.fromRGBO(9, 22, 56, 1),
@@ -77,7 +84,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                 Text(
                   'Settings',
                   style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                      color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25),
                 ),
                 SizedBox(
                   width: 10,
@@ -90,11 +97,19 @@ class _DrawerScreenState extends State<DrawerScreen> {
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  'Log out',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
+                GestureDetector(
+                  onTap: () {
+                    signUserOut(context);
+                  },
+                  child: Text(
+                    'Log out',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                    ),
+                  ),
+                )
               ],
             ),
           ),
