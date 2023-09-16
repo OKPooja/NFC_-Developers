@@ -246,7 +246,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              '',
+                              'Basics of Mutual Funds',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -287,7 +287,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/an_webp/1KMMqlSyiDE/mqdefault_6s.webp?du=3000&sqp=CKuJkqgG&rs=AOn4CLAs3UcLysNMgVbamBhYHq_2CZCDSg",
+                          "https://i.ytimg.com/vi/1KMMqlSyiDE/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD4PS-JEkXT1xv7phdc6EgO55DyVg",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
