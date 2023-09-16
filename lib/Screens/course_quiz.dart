@@ -13,11 +13,11 @@ class _CourseQuizState extends State<CourseQuiz> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF192c49),
         leading: IconButton(
           icon: Icon(
             Icons.menu,
-            color: Colors.black,
+            color: Colors.white,
           ),
           onPressed: () {
           },

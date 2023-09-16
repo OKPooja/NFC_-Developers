@@ -3,6 +3,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:gap/gap.dart';
 import 'package:need/Screens/mentors.dart';
 
+import 'actualProfilePage.dart';
 import 'course_quiz.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -69,15 +70,26 @@ class _HomeScreenState extends State<HomeScreen> {
                           },
                           icon: Icon(Icons.menu, size: 40.0),
                         ),
-                  // Column(
-                  //   children: [
-                  //     Text('Financial literacy blah'),
-                  //     Row(
-                  //       children: [],
-                  //     ),
-                  //     CircleAvatar()
-                  //   ],
-                  // ),
+                  Column(
+                    children: [
+                      Row(
+                        children: [],
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          // Navigate to the profile screen when the avatar is tapped
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ProfilePage(),
+                          ));
+                        },
+                        child:  Icon(
+                          Icons.person,
+                          size: 40.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
