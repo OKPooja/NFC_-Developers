@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SingleChildScrollView(
               child: Container(
-                height: MediaQuery.of(context).size.height,
+                //height: MediaQuery.of(context).size.height,
                 child: Column(
                   children: [
                     //Hello Manish
@@ -231,192 +231,101 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     const SizedBox(height: 15),
-                    Expanded(
-                        child: Padding(
+                    Padding(
                       padding: EdgeInsets.symmetric(
-                        vertical: 16.0,
-                        horizontal: 16.0,
-                      ),
-                      child: ListView(children: [
-                        Container(
-                          height: 60,
-                          child: Text(
-                            'Seek advice from our mentors',
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                      horizontal: 15.0,
+                    ),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 60,
+                            child: Text(
+                              'Seek advice from our mentors',
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
                             ),
                           ),
-                        ),
-                        const SizedBox(height: 10),
-                        Container(
-                          height: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                            color: Color.fromRGBO(53, 162, 159, 1.0),
-                          ),
-                          child: Row(
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 10.0),
-                                    child: Text(
-                                      'Aryan Sawant',
-                                      style: TextStyle(
-                                        fontSize: 35,
-                                        color: Colors.white,
+                          const SizedBox(height: 10),
+                          Container(
+                            height: 150,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                              color: Color.fromRGBO(53, 162, 159, 1.0),
+                            ),
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 10.0),
+                                      child: Text(
+                                        'Aryan Sawant',
+                                        style: TextStyle(
+                                          fontSize: 35,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: Row(
-                                      children: [
-                                        Icon(
-                                          Icons.monetization_on, // Add a coins icon
-                                          color: Colors.black,
-                                        ),
-                                        SizedBox(width: 5), // Add spacing
-                                        Text(
-                                          '400 Coins', // Display the number of coins
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.white,
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.monetization_on, // Add a coins icon
+                                            color: Colors.black,
+                                          ),
+                                          SizedBox(width: 5), // Add spacing
+                                          Text(
+                                            '400 Coins', // Display the number of coins
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                      child: Align(
+                                        alignment: Alignment.centerLeft,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Replace with your logic here to navigate and pass dummy arguments
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) => Mentors(
+                                                  // Pass your dummy arguments here
+                                                  mentorName: 'Aryan Sawant',
+                                                  mentorImage: 'assets/person.jpeg',
+                                                  mentorInfo: 'Aditya Sawant is a highly skilled financial advisor with over 10 years of experience in helping individuals and businesses achieve their financial goals. He specializes in investment strategies, retirement planning, and wealth management. Aditya is dedicated to providing personalized financial guidance to his clients and helping them build a secure financial future.',
+                                                  mentorCoins: 400,
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                          child: Text('Know More'),
+                                          style: ElevatedButton.styleFrom(
+                                            backgroundColor: Color.fromRGBO(
+                                                9,
+                                                22,
+                                                56,
+                                                1), // Set the button background color
+                                            foregroundColor:
+                                            Colors.white, // Set the text color
                                           ),
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: Align(
-                                      alignment: Alignment.centerLeft,
-                                      child: ElevatedButton(
-                                        onPressed: () {
-                                          // Replace with your logic here to navigate and pass dummy arguments
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => Mentors(
-                                                // Pass your dummy arguments here
-                                                mentorName: 'Aryan Sawant',
-                                                mentorImage: 'assets/person.jpeg',
-                                                mentorInfo: 'Aditya Sawant is a highly skilled financial advisor with over 10 years of experience in helping individuals and businesses achieve their financial goals. He specializes in investment strategies, retirement planning, and wealth management. Aditya is dedicated to providing personalized financial guidance to his clients and helping them build a secure financial future.',
-                                                mentorCoins: 400,
-                                              ),
-                                            ),
-                                          );
-                                        },
-                                        child: Text('Know More'),
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color.fromRGBO(
-                                              9,
-                                              22,
-                                              56,
-                                              1), // Set the button background color
-                                          foregroundColor:
-                                          Colors.white, // Set the text color
-                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                              Gap(10.0),
-                              Container(
-                                height: 100,
-                                width: 100,
-                                decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage('assets/person.jpeg'),
-                                      fit: BoxFit.cover),
+                                  ],
                                 ),
-                              ),
-
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        Container(
-                          height: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                              color: Color.fromRGBO(11, 102, 106, 1.0),
-                          ),
-                          child: Row(
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 10.0),
-                                    child: Text(
-                                      'Ram Singh',
-                                      style: TextStyle(
-                                        fontSize: 35,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: Row(
-                                      children: [
-                                        Icon(
-                                          Icons.monetization_on, // Add a coins icon
-                                          color: Colors.black,
-                                        ),
-                                        SizedBox(width: 5), // Add spacing
-                                        Text(
-                                          '200 Coins', // Display the number of coins
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: Align(
-                                      alignment: Alignment.centerLeft,
-                                      child: ElevatedButton(
-                                        onPressed: () {
-                                          // Replace with your logic here to navigate and pass dummy arguments
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => Mentors(
-                                                // Pass your dummy arguments here
-                                                mentorName: 'Ram Singh',
-                                                mentorImage: 'assets/person.jpeg',
-                                                mentorInfo: 'Meet Ram Singh, a seasoned financial expert known for his exceptional knowledge and commitment to financial well-being. With a strong background in investment management, Aditya has successfully guided numerous clients towards financial success. He has a keen eye for market trends and can offer valuable insights into stocks, bonds, and real estate investments.',
-                                                mentorCoins: 200,
-                                              ),
-                                            ),
-                                          );
-                                        },
-                                        child: Text('Know More'),
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color.fromRGBO(
-                                              9,
-                                              22,
-                                              56,
-                                              1), // Set the button background color
-                                          foregroundColor:
-                                          Colors.white, // Set the text color
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Gap(40.0),
-                              Container(
+                                Gap(10.0),
+                                Container(
                                   height: 100,
                                   width: 100,
                                   decoration: const BoxDecoration(
@@ -426,104 +335,192 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                 ),
 
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 10),
-                        Container(
-                          height: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                            color: Color.fromRGBO(53, 162, 159, 1.0),
-                          ),
-                          child: Row(
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 10.0),
-                                    child: Text(
-                                      'Omkar Joshi',
-                                      style: TextStyle(
-                                        fontSize: 35,
-                                        color: Colors.white,
+                          const SizedBox(height: 10),
+                          Container(
+                            height: 150,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                              color: Color.fromRGBO(11, 102, 106, 1.0),
+                            ),
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 10.0),
+                                      child: Text(
+                                        'Ram Singh',
+                                        style: TextStyle(
+                                          fontSize: 35,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: Row(
-                                      children: [
-                                        Icon(
-                                          Icons.monetization_on, // Add a coins icon
-                                          color: Colors.black,
-                                        ),
-                                        SizedBox(width: 5), // Add spacing
-                                        Text(
-                                          '100 Coins', // Display the number of coins
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.white,
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.monetization_on, // Add a coins icon
+                                            color: Colors.black,
+                                          ),
+                                          SizedBox(width: 5), // Add spacing
+                                          Text(
+                                            '200 Coins', // Display the number of coins
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                      child: Align(
+                                        alignment: Alignment.centerLeft,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Replace with your logic here to navigate and pass dummy arguments
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) => Mentors(
+                                                  // Pass your dummy arguments here
+                                                  mentorName: 'Ram Singh',
+                                                  mentorImage: 'assets/person.jpeg',
+                                                  mentorInfo: 'Meet Ram Singh, a seasoned financial expert known for his exceptional knowledge and commitment to financial well-being. With a strong background in investment management, Aditya has successfully guided numerous clients towards financial success. He has a keen eye for market trends and can offer valuable insights into stocks, bonds, and real estate investments.',
+                                                  mentorCoins: 200,
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                          child: Text('Know More'),
+                                          style: ElevatedButton.styleFrom(
+                                            backgroundColor: Color.fromRGBO(
+                                                9,
+                                                22,
+                                                56,
+                                                1), // Set the button background color
+                                            foregroundColor:
+                                            Colors.white, // Set the text color
                                           ),
                                         ),
-                                      ],
+                                      ),
                                     ),
+                                  ],
+                                ),
+                                Gap(40.0),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                        image: AssetImage('assets/person.jpeg'),
+                                        fit: BoxFit.cover),
                                   ),
-                                  Padding(
-                                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: Align(
-                                      alignment: Alignment.centerLeft,
-                                      child: ElevatedButton(
-                                        onPressed: () {
-                                          // Replace with your logic here to navigate and pass dummy arguments
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => Mentors(
-                                                // Pass your dummy arguments here
-                                                mentorName: 'Omkar Joshi',
-                                                mentorImage: 'assets/person.jpeg',
-                                                mentorInfo: 'Introducing Aditya Sawant, a dedicated financial advisor with a passion for helping people achieve financial freedom. With a wealth of experience in the finance industry, Aditya has assisted countless clients in making informed investment decisions. His expertise spans across various financial instruments, including stocks, mutual funds, and retirement planning.',
-                                                mentorCoins: 100,
-                                              ),
-                                            ),
-                                          );
-                                        },
-                                        child: Text('Know More'),
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color.fromRGBO(
-                                              9,
-                                              22,
-                                              56,
-                                              1), // Set the button background color
-                                          foregroundColor:
-                                          Colors.white, // Set the text color
+                                ),
+
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          Container(
+                            height: 150,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                              color: Color.fromRGBO(53, 162, 159, 1.0),
+                            ),
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 10.0),
+                                      child: Text(
+                                        'Omkar Joshi',
+                                        style: TextStyle(
+                                          fontSize: 35,
+                                          color: Colors.white,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                              Gap(15.0),
-                              Container(
-                                height: 100,
-                                width: 100,
-                                decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage('assets/person.jpeg'),
-                                      fit: BoxFit.cover),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.monetization_on, // Add a coins icon
+                                            color: Colors.black,
+                                          ),
+                                          SizedBox(width: 5), // Add spacing
+                                          Text(
+                                            '100 Coins', // Display the number of coins
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                      child: Align(
+                                        alignment: Alignment.centerLeft,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Replace with your logic here to navigate and pass dummy arguments
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) => Mentors(
+                                                  // Pass your dummy arguments here
+                                                  mentorName: 'Omkar Joshi',
+                                                  mentorImage: 'assets/person.jpeg',
+                                                  mentorInfo: 'Introducing Aditya Sawant, a dedicated financial advisor with a passion for helping people achieve financial freedom. With a wealth of experience in the finance industry, Aditya has assisted countless clients in making informed investment decisions. His expertise spans across various financial instruments, including stocks, mutual funds, and retirement planning.',
+                                                  mentorCoins: 100,
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                          child: Text('Know More'),
+                                          style: ElevatedButton.styleFrom(
+                                            backgroundColor: Color.fromRGBO(
+                                                9,
+                                                22,
+                                                56,
+                                                1), // Set the button background color
+                                            foregroundColor:
+                                            Colors.white, // Set the text color
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ),
+                                Gap(15.0),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                        image: AssetImage('assets/person.jpeg'),
+                                        fit: BoxFit.cover),
+                                  ),
+                                ),
 
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
                       ),
                     ),
-                    ),
-
                   ],
                 ),
               ),
