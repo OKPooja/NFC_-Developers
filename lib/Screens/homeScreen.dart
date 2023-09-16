@@ -88,38 +88,39 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     //Hello Manish
                     Container(
-                      height: 150,
+                      height: 100,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(50),
-                        ),
+                        // borderRadius: BorderRadius.only(
+                        //   bottomRight: Radius.circular(90),
+                        //   bottomLeft: Radius.circular(90),
+                        // ),
                         color: Color.fromRGBO(4, 22, 66, 1.0),
                       ),
                       child: Stack(
                         children: [
+                          // Positioned(
+                          //   left: 30,
+                          //   child: Container(
+                          //     height: 70,
+                          //     width: 300,
+                          //     decoration: BoxDecoration(
+                          //       borderRadius: BorderRadius.only(
+                          //         bottomLeft: Radius.circular(50),
+                          //         bottomRight: Radius.circular(50),
+                          //       ),
+                          //       color: Colors.white,
+                          //     ),
+                          //   ),
+                          // ),
                           Positioned(
-                            top: 35,
-                            left: 0,
-                            child: Container(
-                              height: 80,
-                              width: 300,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(50),
-                                  bottomRight: Radius.circular(50),
-                                ),
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                          Positioned(
-                            top: 50,
+                            top: 30,
+                            left: 70,
                             child: Text(
                               'Hello Manish!',
                               style: TextStyle(
                                 fontSize: 40,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black,
+                                color: Colors.white,
                               ),
                             ),
                           )
@@ -184,7 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                               height: 60,
                               child: Text(
-                                'Savings? Deep dive on how to save more',
+                                'Unlocking Greater Savings: Dive Deep into Strategies for Boosting Your Savings',
                                 style: TextStyle(
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,
@@ -253,7 +254,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             height: 150,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                              color: Color.fromRGBO(53, 162, 159, 1.0),
+                              color: Color.fromRGBO(31, 110, 140, 1.0),
                             ),
                             child: Row(
                               children: [
@@ -343,7 +344,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             height: 150,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                              color: Color.fromRGBO(11, 102, 106, 1.0),
+                              color: Color.fromRGBO(46, 138, 153, 1.0),
                             ),
                             child: Row(
                               children: [
@@ -433,7 +434,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             height: 150,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                              color: Color.fromRGBO(53, 162, 159, 1.0),
+                              color: Color.fromRGBO(31, 110, 140, 1.0),
                             ),
                             child: Row(
                               children: [
@@ -521,6 +522,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
+                    const SizedBox(
+                      height: 20
+                    )
                   ],
                 ),
               ),

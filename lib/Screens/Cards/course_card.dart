@@ -41,7 +41,7 @@ class CourseCard extends StatelessWidget {
                 children: <Widget>[
                   Image.network(
                     imageUrl,
-                    height: 140,
+                    height: 120,
                     width: 170,
                     fit: BoxFit.cover,
                   ),

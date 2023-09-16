@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'bankingPages/bankingHome.dart';
+
 class BankingPage extends StatefulWidget {
   const BankingPage({super.key});
 
@@ -10,6 +12,6 @@ class BankingPage extends StatefulWidget {
 class _BankingPageState extends State<BankingPage> {
   @override
   Widget build(BuildContext context) {
-    return const Text('banking page');
+    return SafeArea(child: BankingHome());
   }
 }
