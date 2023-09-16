@@ -117,7 +117,23 @@ class _SLevel1State extends State<SLevel1> {
                         videoUrl:
                             'https://youtu.be/67WwuPI-y5M?si=juvlm-HO4-v5tJDi',
                         videoTitle: 'Basics of stock market for beginners',
-                        videoDescription: 'Basics of stock market for beginners: What is share market & how stock market works')));
+                        videoDescription: '''The stock market is like a giant marketplace where people buy and sell ownership in companies. These ownership shares are called "stocks" or "equities."
+
+When you buy a stock, you become a partial owner of the company. You share in the company's profits and losses, and you may have the right to vote on certain company decisions.
+
+Stock prices can go up or down based on various factors like the company's performance, economic conditions, and investor sentiment.
+
+The stock market has two main segments: the primary market (where companies issue new stocks through initial public offerings or IPOs) and the secondary market (where previously issued stocks are bought and sold among investors).
+
+To participate in the stock market, you'll need a brokerage account. This is like a financial account that allows you to buy and sell stocks online or through a broker.
+
+Stocks are categorized into different types, such as common stocks (ordinary shares that come with voting rights) and preferred stocks (which may not have voting rights but offer certain advantages).
+
+Stock market indices, like the S&P 500 or Dow Jones Industrial Average, represent the overall performance of a group of stocks. They're used to gauge how the market as a whole is doing.
+
+Investing in stocks can offer the potential for long-term growth, but it also involves risk. Prices can be volatile, and you could lose money if stock values decrease.
+
+Many investors use a "buy and hold" strategy, where they invest in stocks for the long term and don't frequently trade. Others engage in active trading to try to profit from short-term price fluctuations.''')));
           },
           child: Container(
             padding: EdgeInsets.all(8.0),
@@ -169,7 +185,13 @@ class _SLevel1State extends State<SLevel1> {
                         videoUrl:
                             'https://youtu.be/p7HKvqRI_Bo?si=1PSlOZFgkqUblyD5',
                         videoTitle: 'How does the stock market work',
-                        videoDescription: 'Blog')));
+                        videoDescription: '''The stock market is like a giant marketplace where people buy and sell shares of companies. When a company wants to grow or raise money, it can decide to "go public" by selling shares of itself to the public through an initial public offering (IPO).
+
+When you buy a share of a company's stock, you essentially become a small owner of that company. Your goal is to buy shares when you believe the company will do well in the future, and the stock's value will go up.
+
+Stock prices can go up and down every day due to many factors, including company performance, economic news, and investor sentiment. The stock market is influenced by supply and demand, which means if more people want to buy a stock than sell it, the price goes up, and vice versa.
+
+Investors can make money in the stock market by buying low and selling high. Some investors also earn income through dividends, which are periodic payments made by some companies to their shareholders. However, it's important to know that the stock market carries risks, and there's no guarantee of making money. It's a long-term game, and beginners should consider learning and starting with a diversified approach through mutual funds or exchange-traded funds (ETFs) to manage risk. Seeking advice from financial experts or doing thorough research is advisable for newcomers.''')));
           },
           child: Container(
             padding: EdgeInsets.all(8.0),
@@ -221,7 +243,29 @@ class _SLevel1State extends State<SLevel1> {
                         videoUrl: 'https://www.youtube.com/watch?v=fzp02ud0AHc&list=PLfEVwubAeLh9Ua43yskVcQMf2CWTQy3xr&index=9',
                         videoTitle: 'Stock Market Explained | Share Market | What is IPO ?',
                         videoDescription:
-                            'Stock Market Explained | Share Market | What is IPO ? | Sensex | Nifty ')));
+                            '''What is IPO?
+
+Now, let's talk about IPOs. IPO stands for Initial Public Offering. It's like a company's big debut on the stock market. Before an IPO, a company is usually private, meaning it's owned by a smaller group of people, like the founders or some early investors. But when a company decides to go public, it means they want to invite more people to become part-owners.
+
+How an IPO Works:
+
+During an IPO, the company offers a certain number of its shares to the public for the first time. This is like the company saying, "Hey, we're opening our doors to new owners!" These shares are sold through the stock exchange, a place where people trade stocks.
+
+Why Companies Go Public:
+
+Companies do this for a few reasons. First, it helps them raise a lot of money. This money can be used to grow and expand the business. Second, it gives the original owners a way to cash in on their hard work. They can sell some of their shares and get a return for their efforts in building the company.
+
+Buying Shares in an IPO:
+
+If you want to be part of an IPO, you can buy shares through a broker. A broker is like a middleman who helps you buy and sell stocks. It's important to do some research before investing in an IPO, just like you would before buying anything valuable.
+
+Risks and Rewards:
+
+It's important to remember that investing in an IPO can be exciting, but it also comes with risks. The value of a company's stock can go up or down, and sometimes it's hard to predict. So, it's a good idea to be careful and maybe start with a small investment.
+
+Final Thoughts:
+
+To sum it up, the stock market is a place where people buy and sell ownership in companies. An IPO is when a company first opens up its ownership to the public. It can be a great way for companies to grow and for people to invest, but it's important to approach it with some knowledge and caution. It's like taking a step into the world of owning a piece of the business world!''')));
           },
           child: Container(
             padding: EdgeInsets.all(8.0),
