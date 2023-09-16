@@ -201,7 +201,16 @@ class _Mlevel1State extends State<Mlevel1> {
                         videoUrl:
                             'https://youtu.be/PbldLCsspgE?si=-nCYVTucIlrcYQgv',
                         videoTitle: 'What is Mutual Funds',
-                        videoDescription: 'Blog')));
+                        videoDescription:
+                            '''Mutual funds are a way for people to invest their money together. Imagine a group of individuals who pool their money to buy a variety of investments like stocks, bonds, or other assets. This collection of investments is managed by a professional, who makes decisions on where to invest based on the fund's goals.
+
+When you invest in a mutual fund, you're essentially buying shares of the fund. The value of these shares goes up or down depending on how well the investments in the fund perform. This means you have a stake in the overall success (or failure) of the investments held by the fund.
+
+One of the main benefits of mutual funds is that they allow you to diversify your investments without needing a large amount of money. Diversification means spreading your money across different types of investments, which can help reduce risk. It's like not putting all your eggs in one basket.
+
+Another advantage is that mutual funds are managed by professionals who have expertise in selecting and managing investments. This can be a big help if you're not familiar with the complexities of the financial markets.
+
+However, it's important to know that while mutual funds offer potential for growth, they also come with some level of risk. The value of your investment can go up and down, and there's no guarantee of returns. It's always a good idea to do some research or consult a financial advisor before investing in any mutual fund.''')));
           },
           child: Container(
             padding: EdgeInsets.all(8.0),
@@ -253,7 +262,15 @@ class _Mlevel1State extends State<Mlevel1> {
                         videoUrl:
                             'https://youtu.be/8A3s9WP_7l4?si=FqyEsmiBCNkrEv12',
                         videoTitle: 'What is mutual funds by Dhruv',
-                        videoDescription: 'Blog')));
+                        videoDescription: '''Imagine you want to invest your money, but you're not sure where to start. This is where mutual funds come in. They're like a team of experts who manage a pool of money from many investors, all with the same goal: to grow their investments.
+
+When you invest in a mutual fund, you're essentially buying a piece of this big pool. This pool is then used to buy different things like stocks (which are like shares of a company) or bonds (which are like loans to companies or governments). The experts, also known as fund managers, decide what to buy and when to sell, aiming to make the pool of money grow over time.
+
+One of the cool things about mutual funds is that they let you invest in lots of different things without needing a lot of money yourself. So even if you don't have a ton of cash, you can still have a piece of many different investments.
+
+But, like any investment, there's a chance you might not make as much money as you hoped, or even lose some. The value of the things in the pool can go up and down, kind of like a rollercoaster ride. That's why it's important to think about what level of risk you're comfortable with before choosing a mutual fund. It's like deciding how fast you want to go on a rollercoaster.
+
+Remember, it's perfectly normal if all of this seems a bit confusing at first. Many people start off feeling that way. The important thing is to ask questions, do some research, and maybe talk to someone who knows about investing, like a financial advisor. They can help you figure out if mutual funds are a good fit for you.''')));
           },
           child: Container(
             padding: EdgeInsets.all(8.0),
@@ -305,7 +322,27 @@ class _Mlevel1State extends State<Mlevel1> {
                         videoUrl: 'https://www.youtube.com/watch?v=rsFBpGUAZWA',
                         videoTitle: 'How to Begin in Mutual Funds',
                         videoDescription:
-                            'What is a Mutual Fund and How Does It Work?')));
+                            '''Here's a step-by-step guide on how to begin investing in mutual funds:
+
+1. Set Clear Financial Goals: Before you start investing in mutual funds, it's crucial to have a clear understanding of your financial goals. Are you saving for a specific milestone like buying a house, retirement, or just looking to grow your wealth over time? Knowing your goals will help you choose the right type of mutual funds.
+
+2. Understand Your Risk Tolerance: Different mutual funds come with varying levels of risk. It's important to assess how comfortable you are with the possibility of your investments fluctuating in value. Generally, higher-risk funds have the potential for higher returns, but they can also experience greater volatility.
+
+3.Do Your Research: Take some time to learn about mutual funds. Understand the different types (such as equity, debt, hybrid), how they work, and the fees associated with them. Look for reputable sources of information or consider consulting a financial advisor for guidance.
+
+4. Choose the Right Mutual Fund: Based on your financial goals and risk tolerance, select a mutual fund that aligns with your objectives. For example, if you're looking for long-term growth, an equity fund might be suitable. If you prefer lower risk, a debt or balanced fund could be a better fit.
+
+5. Select a Fund House: Mutual funds are managed by companies known as Asset Management Companies (AMCs). Choose a well-established and reputable AMC with a track record of good fund performance. This ensures that your investments are managed by experienced professionals.
+
+6. Complete the Necessary Documentation: To invest in mutual funds, you'll need to complete some paperwork. This usually involves providing your identification details, bank account information, and sometimes, tax-related documents. This process may vary slightly depending on your location.
+
+7. Open a Demat or Mutual Fund Account: If you don't have one already, you'll need to open a demat account or a mutual fund account with a registered intermediary like a bank or a brokerage firm. This account will serve as a platform for your mutual fund transactions.
+
+8. Invest Regularly and Monitor Your Portfolio: Once you've chosen your mutual fund and completed the necessary paperwork, start making regular contributions. This can be through lump-sum investments or periodic contributions (SIPs - Systematic Investment Plans). Keep an eye on your investments and review your portfolio periodically to ensure it still aligns with your goals.
+
+9. Stay Informed and Seek Advice When Needed: Keep yourself updated on market trends and the performance of your mutual funds. If you're ever unsure about a decision, consider seeking advice from a financial advisor or doing additional research.
+
+Remember, investing in mutual funds is a long-term commitment, and it's normal for the value of your investments to fluctuate over time. Stay patient and focused on your goals.''')));
           },
           child: Container(
             padding: EdgeInsets.all(8.0),
@@ -362,7 +399,11 @@ class _Mlevel1State extends State<Mlevel1> {
             height: 55,
             child: Align(
               alignment: Alignment.center,
-              child: Text(' Take Quiz 1', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight:FontWeight.w700)),
+              child: Text(' Take Quiz 1',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700)),
             ),
           ),
         ),

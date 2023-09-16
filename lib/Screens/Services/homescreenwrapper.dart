@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:need/Screens/banking.dart';
+import 'package:need/Screens/community_page.dart';
 import 'package:need/Screens/course_quiz.dart';
 import 'package:need/Screens/profile.dart';
 import '../bottom_navBar.dart';
@@ -51,7 +52,7 @@ class _HomePageWrapperState extends State<HomePageWrapper> {
         widget = const BankingPage();
         break;
       case 3:
-        widget = const ProfilePage();
+        widget = const CommunityPage();
         break;
       default:
         widget = HomePage();

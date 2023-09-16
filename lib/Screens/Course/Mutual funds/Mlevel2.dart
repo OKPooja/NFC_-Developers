@@ -119,7 +119,19 @@ class _Mlevel2State extends State<Mlevel2> {
                             'https://youtu.be/i2OcUvUfFJM?si=maU8dDl0UPaw5TQU',
                         videoTitle: 'Basics of Mutual Funds Episode 1',
                         videoDescription:
-                            'Blog')));
+                            '''1. Understanding Mutual Funds: With a moderate knowledge of mutual funds, you likely already know that they're investment vehicles that pool money from various investors to purchase a diversified portfolio of stocks, bonds, or other securities. This diversification helps spread risk and potentially increase returns.
+
+2. Types of Mutual Funds: You might be familiar with the different categories of mutual funds, such as equity funds (which invest primarily in stocks), debt funds (which focus on bonds and fixed-income securities), and hybrid funds (which blend both stocks and bonds). Each type serves different investment objectives and risk profiles.
+
+3. Risk and Returns: You understand that mutual funds come with varying levels of risk. Equity funds tend to have higher potential returns but also higher volatility. Debt funds are generally lower risk but offer more modest returns. Balanced or hybrid funds aim to strike a balance between risk and return.
+
+4. Expense Ratios and Fees:You're aware that mutual funds charge fees for their management and operation. The expense ratio, which includes management fees, administrative costs, and other expenses, is an important factor to consider. Lower expense ratios are generally more favorable for investors.
+
+5. Performance Evaluation: Given your moderate knowledge, you likely know how to assess a mutual fund's performance. You may look at factors like historical returns, consistency in performance, and how it compares to relevant benchmarks. This helps gauge how well the fund has performed over time.
+
+6. Asset Allocation and Diversification: You understand the significance of asset allocation and diversification within a mutual fund portfolio. A well-diversified fund spreads investments across different asset classes and securities, which can help manage risk and potentially enhance overall returns.
+
+Remember, even with moderate knowledge, it's always a good idea to consult with a financial advisor for personalized advice and to keep learning about the evolving landscape of mutual funds.''')));
                 },
                 child: Container(
                   padding: EdgeInsets.all(8.0),
@@ -172,7 +184,13 @@ class _Mlevel2State extends State<Mlevel2> {
                             'https://www.youtube.com/watch?si=BkDmfsTnztfkwdRI&v=pMZSfei7qkM',
                         videoTitle: 'Active and Passive Funds: Episode-2 - Basics of Mutual Funds with Groww',
                         videoDescription:
-                            'Blog')));
+                            '''Active Funds:
+
+Active funds are like a team of skilled managers who actively make decisions about which investments to buy and sell within the fund. These managers aim to outperform a specific benchmark, like a stock market index. They conduct extensive research, analyze market trends, and use their expertise to select investments they believe will generate higher returns. Active funds are dynamic and constantly adjusting their holdings in pursuit of better performance. However, they come with higher management fees to cover the costs of this active management.
+
+Passive Funds:
+
+Passive funds, on the other hand, take a different approach. They aim to replicate the performance of a specific market index, like the S&P 500, rather than trying to beat it. Instead of relying on active decision-making, passive funds simply aim to match the movements of the index they track. This is done by holding the same or a similar mix of investments as the index. Because there's less active management involved, passive funds generally have lower fees compared to active funds. They offer a more hands-off approach to investing, often preferred by those seeking a simpler and cost-effective strategy.''')));
                 },
                 child: Container(
                   padding: EdgeInsets.all(8.0),
@@ -224,7 +242,31 @@ class _Mlevel2State extends State<Mlevel2> {
                             'https://www.youtube.com/watch?v=FxE4RvAh7L4',
                         videoTitle: 'Basics of Mutual Funds: Episode:3 Types of Equity Funds',
                         videoDescription:
-                            'Blog')));
+                            '''Different types of equity funds:
+
+Large-Cap Funds:
+Large-cap equity funds primarily invest in well-established companies with large market capitalizations. These companies are typically leaders in their respective industries. Investors in large-cap funds seek stability and steady returns over the long term.
+
+Mid-Cap Funds:
+Mid-cap equity funds focus on companies with medium-sized market capitalizations. These companies are often in a phase of rapid growth and expansion. Investing in mid-cap funds offers a balance between potential for high returns and a slightly higher level of risk compared to large-cap funds.
+
+Small-Cap Funds:
+Small-cap equity funds invest in companies with small market capitalizations. These companies are often younger, with significant growth potential. While small-cap funds have the potential for substantial returns, they also come with higher volatility and risk due to the less-established nature of these companies.
+
+Sectoral or Thematic Funds:
+Sectoral or thematic equity funds concentrate on specific industries or themes, such as technology, healthcare, or renewable energy. They aim to capitalize on trends and opportunities within a particular sector. Investing in these funds allows for focused exposure to a specific area of the economy.
+
+Multi-Cap Funds:
+Multi-cap equity funds have the flexibility to invest across companies of various market capitalizations. This means they can hold a mix of large-cap, mid-cap, and small-cap stocks. This versatility allows fund managers to adapt to different market conditions and capitalize on opportunities across the spectrum.
+
+Dividend Yield Funds:
+Dividend yield equity funds focus on companies that pay high dividends relative to their stock price. These funds are favored by investors seeking regular income from their investments, making them popular among retirees or those looking for steady cash flows.
+
+Value Funds:
+Value equity funds target stocks that are believed to be undervalued by the market. Fund managers look for companies whose stock prices may not reflect their true worth, potentially offering opportunities for capital appreciation when the market corrects this undervaluation.
+
+Growth Funds:
+Growth equity funds concentrate on companies with strong potential for above-average growth in earnings and revenue. These funds often invest in companies at the early stages of their growth trajectory, aiming for substantial capital appreciation over time.''')));
                 },
                 child: Container(
                   padding: EdgeInsets.all(8.0),
@@ -277,7 +319,17 @@ class _Mlevel2State extends State<Mlevel2> {
                             'https://www.youtube.com/watch?v=1KMMqlSyiDE',
                         videoTitle: 'Large Cap, Mid Cap & Small Cap Stocks & Mutual Funds',
                         videoDescription:
-                            'Blog')));
+                            '''Large Cap Stocks & Mutual Funds:
+
+Large cap stocks refer to companies with a substantial market capitalization, meaning they have a high total value of outstanding shares. These are typically well-established, industry-leading companies with a proven track record of stability and performance. Investing in large cap stocks or mutual funds that focus on them is considered a relatively lower-risk strategy. They often provide more stability in turbulent market conditions, making them suitable for conservative investors or those nearing retirement.
+
+Mid Cap Stocks & Mutual Funds:
+
+Mid cap stocks belong to companies that have a medium market capitalization, falling between large caps and small caps. These companies are typically in a growth phase, with the potential for expansion and increased market share. Mid cap stocks can offer a balance between growth potential and stability, making them an attractive option for investors seeking a moderate level of risk. Mutual funds specializing in mid cap stocks aim to capture the growth potential of these companies while maintaining a reasonable level of risk.
+
+Small Cap Stocks & Mutual Funds:
+
+Small cap stocks represent companies with a relatively low market capitalization, indicating they are smaller, newer, or less established compared to their larger counterparts. These companies often have significant growth potential, but they also come with higher volatility and risk. Investing in small cap stocks or mutual funds focused on them can be more aggressive and potentially yield higher returns, but it also carries a higher degree of uncertainty. They are suitable for investors with a longer investment horizon and a higher risk tolerance, looking for substantial growth opportunities.''')));
                 },
                 child: Container(
                   padding: EdgeInsets.all(8.0),
