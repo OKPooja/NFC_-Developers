@@ -22,7 +22,7 @@ class BottomNavBar extends StatelessWidget {
               : Colors.white,
         ),
         Icon(
-          Icons.format_list_bulleted_sharp,
+          Icons.query_stats_sharp,
           size: 25,
           color: selectedIndex == 1
               ? Color.fromRGBO(9, 22, 56, 1)
@@ -36,7 +36,7 @@ class BottomNavBar extends StatelessWidget {
               : Colors.white,
         ),
         Icon(
-          Icons.person_2_sharp,
+          Icons.feed_outlined,
           size: 25,
           color: selectedIndex == 3
               ? Color.fromRGBO(9, 22, 56, 1)
