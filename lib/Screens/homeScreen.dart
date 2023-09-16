@@ -100,12 +100,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     //Hello Manish
                     Container(
-                      height: 100,
+                      height: 50,
                       decoration: BoxDecoration(
-                        // borderRadius: BorderRadius.only(
-                        //   bottomRight: Radius.circular(90),
-                        //   bottomLeft: Radius.circular(90),
-                        // ),
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(50),
+                          // bottomLeft: Radius.circular(90),
+                        ),
                         color: Color.fromRGBO(4, 22, 66, 1.0),
                       ),
                       child: Stack(
@@ -125,12 +125,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           //   ),
                           // ),
                           Positioned(
-                            top: 30,
-                            left: 70,
+                            top: 10,
+                            left: 20,
                             child: Text(
                               'Hello Manish!',
                               style: TextStyle(
-                                fontSize: 40,
+                                fontSize: 25,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),
@@ -185,7 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 10,
                     ),
                     //Education redirect
                     Padding(
@@ -197,14 +197,15 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                               height: 60,
                               child: Text(
-                                'Unlocking Greater Savings: Dive Deep into Strategies for Boosting Your Savings',
+                                'Unlocking Greater Savings: Dive Deep into Savings',
                                 style: TextStyle(
-                                  fontSize: 30,
+                                  fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
                                 ),
                               ),
                             ),
+                            // const SizedBox(height: 14,),
                             Container(
                               height: 150,
                               width: double.infinity,
@@ -249,21 +250,22 @@ class _HomeScreenState extends State<HomeScreen> {
                       horizontal: 15.0,
                     ),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             height: 60,
                             child: Text(
-                              'Seek advice from our mentors',
+                              'Seek advice from our mentors here!!',
                               style: TextStyle(
-                                fontSize: 30,
+                                fontSize: 25,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                               ),
                             ),
                           ),
-                          const SizedBox(height: 10),
+                          // const SizedBox(height: 3),
                           Container(
-                            height: 150,
+                            height: 153,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(15.0)),
                               color: Color.fromRGBO(31, 110, 140, 1.0),
@@ -353,7 +355,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           const SizedBox(height: 10),
                           Container(
-                            height: 150,
+                            height: 153,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(15.0)),
                               color: Color.fromRGBO(46, 138, 153, 1.0),
@@ -443,7 +445,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           const SizedBox(height: 10),
                           Container(
-                            height: 150,
+                            height: 153,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(15.0)),
                               color: Color.fromRGBO(31, 110, 140, 1.0),

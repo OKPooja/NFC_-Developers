@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import '../../util/colors.dart';
 
 class AccountOpening1 extends StatefulWidget {
@@ -11,7 +11,27 @@ class AccountOpening1 extends StatefulWidget {
 
 class _AccountOpening1State extends State<AccountOpening1> {
   @override
+  final Uri _url = Uri.parse('https://www.onlinesbi.sbi/');
+  final Uri _url1 = Uri.parse('https://www.hdfcbank.com/');
+  final Uri _url2 = Uri.parse('https://www.kotak.com/en/home.html');
 
+  Future<void> _launchUrl() async {
+    if (!await launchUrl(_url)) {
+      throw Exception('Could not launch $_url');
+    }
+  }
+
+  Future<void> _launchUrl1() async {
+    if (!await launchUrl(_url)) {
+      throw Exception('Could not launch $_url');
+    }
+  }
+
+  Future<void> _launchUrl2() async {
+    if (!await launchUrl(_url)) {
+      throw Exception('Could not launch $_url');
+    }
+  }
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +76,8 @@ class _AccountOpening1State extends State<AccountOpening1> {
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(30),
                         bottomRight: Radius.circular(30),
+                        topLeft: Radius.circular(30),
+                        bottomLeft: Radius.circular(30),
                       ),
                       boxShadow: [
                         BoxShadow(
@@ -83,7 +105,7 @@ class _AccountOpening1State extends State<AccountOpening1> {
                                       image: DecorationImage(
                                           fit: BoxFit.cover,
                                           image:
-                                          AssetImage("assets/current1.png"))),
+                                          AssetImage("assets/sbilogo.png"))),
                                 ),
                                 SizedBox(width: 10,),
                                 Column(
@@ -111,30 +133,33 @@ class _AccountOpening1State extends State<AccountOpening1> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Container(
-                                  width: 80,
-                                  height: 30,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(30),
-                                    color: Appcolor.selectBackground,
-                                  ),
-                                  child: Center(
 
-                                    child: ElevatedButton(
-                                      onPressed: () {
-                                        {
-                                          Navigator.pushNamed(context, 'https://www.onlinesbi.sbi/'); // Navigate to the web page screen
-                                        };
-                                      },
-                                      child: Text(
-                                        "Select",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: Appcolor.selectColor
+                              children: [
+                                Center(
+                                  child: Container(
+                                    width: 90,
+                                    height: 30,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: Appcolor.selectBackground,
+                                    ),
+                                    child: Center(
+
+                                      child: ElevatedButton(
+                                        onPressed: _launchUrl,
+                                        style: ButtonStyle(
+                                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF192c49)), // Set the desired color here
+                                        ),
+                                        child: Text(
+                                          "Select",
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -158,7 +183,243 @@ class _AccountOpening1State extends State<AccountOpening1> {
                       ],
                     ),
                   ),
-                )
+                ),
+                SizedBox(height: 10,),
+                Container(
+                  height: 90,
+                  width: MediaQuery.of(context).size.width-20,
+
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(30),
+                        bottomRight: Radius.circular(30),
+                        topLeft: Radius.circular(30),
+                        bottomLeft: Radius.circular(30),
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color(0xFFd8dbe0),
+                            offset: Offset(1, 1),
+                            blurRadius: 20.0,
+                            spreadRadius: 10)
+                      ]),
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 10, left: 18),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(width: 3, color: Colors.grey),
+                                      image: DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image:
+                                          AssetImage("assets/hdfclogo.png"))),
+                                ),
+                                SizedBox(width: 10,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("HDFC Bank ",
+                                        style:
+                                        TextStyle(fontSize: 16, color: Colors.black,fontWeight: FontWeight.w800)),
+                                    // Text("account? ",
+                                    //     style:
+                                    //     TextStyle(fontSize: 16, color: Colors.black,fontWeight: FontWeight.w800)),
+                                    // SizedBox(height: 10,),
+                                    // Text("Know more about opening",
+                                    //     style:
+                                    //     TextStyle(fontSize: 14, color:Appcolor.idColor,fontWeight: FontWeight.w800)),
+                                    // Text("a bank account",
+                                    //     style:
+                                    //     TextStyle(fontSize: 14, color:Appcolor.idColor,fontWeight: FontWeight.w800))
+                                    //more text copy Text()
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                              children: [
+                                Center(
+                                  child: Container(
+                                    width: 90,
+                                    height: 30,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: Appcolor.selectBackground,
+                                    ),
+                                    child: Center(
+
+                                      child: ElevatedButton(
+                                        onPressed: _launchUrl1,
+                                        style: ButtonStyle(
+                                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF192c49)), // Set the desired color here
+                                        ),
+                                        child: Text(
+                                          "Select",
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Container(
+                              width: 5,
+                              height: 35,
+                              decoration: BoxDecoration(
+                                  color: Appcolor.selectColor,
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(30),
+                                      bottomLeft: Radius.circular(30)
+                                  )
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(height: 10,),
+                Container(
+                  height: 90,
+                  width: MediaQuery.of(context).size.width-20,
+
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(30),
+                        bottomRight: Radius.circular(30),
+                        topLeft: Radius.circular(30),
+                        bottomLeft: Radius.circular(30),
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color(0xFFd8dbe0),
+                            offset: Offset(1, 1),
+                            blurRadius: 20.0,
+                            spreadRadius: 10)
+                      ]),
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 10, left: 18),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(width: 3, color: Colors.grey),
+                                      image: DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image:
+                                          AssetImage("assets/kotaklogo.png"))),
+                                ),
+                                SizedBox(width: 10,),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Kotak Bank",
+                                        style:
+                                        TextStyle(fontSize: 16, color: Colors.black,fontWeight: FontWeight.w800)),
+                                    // Text("account? ",
+                                    //     style:
+                                    //     TextStyle(fontSize: 16, color: Colors.black,fontWeight: FontWeight.w800)),
+                                    // SizedBox(height: 10,),
+                                    // Text("Know more about opening",
+                                    //     style:
+                                    //     TextStyle(fontSize: 14, color:Appcolor.idColor,fontWeight: FontWeight.w800)),
+                                    // Text("a bank account",
+                                    //     style:
+                                    //     TextStyle(fontSize: 14, color:Appcolor.idColor,fontWeight: FontWeight.w800))
+                                    //more text copy Text()
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                              children: [
+                                Center(
+                                  child: Container(
+                                    width: 90,
+                                    height: 30,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(30),
+                                      color: Appcolor.selectBackground,
+                                    ),
+                                    child: Center(
+
+                                      child: ElevatedButton(
+                                        onPressed: _launchUrl2,
+                                        style: ButtonStyle(
+                                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF192c49)), // Set the desired color here
+                                        ),
+                                        child: Text(
+                                          "Select",
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Container(
+                              width: 5,
+                              height: 35,
+                              decoration: BoxDecoration(
+                                  color: Appcolor.selectColor,
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(30),
+                                      bottomLeft: Radius.circular(30)
+                                  )
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                ),
             ],
             ),
 

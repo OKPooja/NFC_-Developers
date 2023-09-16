@@ -198,7 +198,7 @@ class _BankingHomeState extends State<BankingHome> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            width: 80,
+                            width: 90,
                             height: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
@@ -213,11 +213,14 @@ class _BankingHomeState extends State<BankingHome> {
                                     MaterialPageRoute(builder: (context) => AccountOpening1()),
                                   );
                                 },
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF192c49)), // Set the desired color here
+                                ),
                                 child: Text(
                                   "Select",
                                   style: TextStyle(
                                       fontSize: 16,
-                                      color: Appcolor.selectColor
+                                      color: Colors.white
                                   ),
                                 ),
                               ),
@@ -312,7 +315,7 @@ class _BankingHomeState extends State<BankingHome> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            width: 80,
+                            width: 90,
                             height: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
@@ -327,11 +330,14 @@ class _BankingHomeState extends State<BankingHome> {
                                     MaterialPageRoute(builder: (context) => AccountOpening1()),
                                   );
                                 },
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF192c49)), // Set the desired color here
+                                ),
                                 child: Text(
                                   "Select",
                                   style: TextStyle(
                                       fontSize: 16,
-                                      color: Appcolor.selectColor
+                                      color: Colors.white
                                   ),
                                 ),
                               ),
@@ -426,7 +432,7 @@ class _BankingHomeState extends State<BankingHome> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            width: 80,
+                            width: 90,
                             height: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
@@ -441,11 +447,14 @@ class _BankingHomeState extends State<BankingHome> {
                                     MaterialPageRoute(builder: (context) => AccountOpening1()),
                                   );
                                 },
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF192c49)), // Set the desired color here
+                                ),
                                 child: Text(
                                   "Select",
                                   style: TextStyle(
                                       fontSize: 16,
-                                      color: Appcolor.selectColor
+                                      color: Colors.white
                                   ),
                                 ),
                               ),
@@ -540,7 +549,7 @@ class _BankingHomeState extends State<BankingHome> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            width: 80,
+                            width: 90,
                             height: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
@@ -549,17 +558,21 @@ class _BankingHomeState extends State<BankingHome> {
                             child: Center(
 
                               child: ElevatedButton(
+
                                 onPressed: () {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(builder: (context) => AccountOpening1()),
                                   );
                                 },
+                                style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF192c49)), // Set the desired color here
+                                ),
                                 child: Text(
                                   "Select",
                                   style: TextStyle(
                                       fontSize: 16,
-                                      color: Appcolor.selectColor
+                                      color: Colors.white,
                                   ),
                                 ),
                               ),
