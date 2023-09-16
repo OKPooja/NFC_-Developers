@@ -40,6 +40,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_core: ^2.15.1
   firebase_auth: ^4.9.0
+  carousel_slider: ^4.2.1
+  gap: ^2.0.1
+
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +72,9 @@ flutter:
      - assets/Illustration.png
      - assets/welcome.png
      - assets/login.png
+     - assets/person.jpeg
+     - assets/finance.jpeg
+     - assets/financial literacy.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

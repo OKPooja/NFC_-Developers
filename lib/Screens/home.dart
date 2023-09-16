@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:need/Login_Signup_Screens/login.dart';
-
 import 'drawerScreen.dart';
 import 'homeScreen.dart';
 
@@ -17,21 +16,21 @@ class _HomePageState extends State<HomePage> {
 
   void signUserOut(BuildContext context) async {
     await FirebaseAuth.instance.signOut();
-
-    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
+    Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
   }
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(onPressed: () => signUserOut(context), icon: Icon(Icons.logout),),
-        ],
-      ),
+      // appBar: AppBar(
+      //   actions: [
+      //     IconButton(onPressed: () => signUserOut(context), icon: Icon(Icons.logout),),
+      //   ],
+      // ),
       body: Stack(
         children: [
-          Text('Logged In'),
           DrawerScreen(),
           HomeScreen(),
         ],
