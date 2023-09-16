@@ -37,24 +37,26 @@ class _YouTubePlayerState extends State<YouTubePlayer> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(
-          height: 2000,
-          color: Colors.white,
-          child: Column(
-            children: [
-              YoutubePlayer(
-                controller: _controller,
-                showVideoProgressIndicator: true,
-                progressIndicatorColor: Colors.blueAccent,
-              ),
-              SizedBox(height: 10),
-              Text(
-                widget.videoTitle,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-              SizedBox(height: 10),
-              Text(widget.videoDescription),
-            ],
+        child: SingleChildScrollView(
+          child: Container(
+            // height: 2000,
+            color: Colors.white,
+            child: Column(
+              children: [
+                YoutubePlayer(
+                  controller: _controller,
+                  showVideoProgressIndicator: true,
+                  progressIndicatorColor: Colors.blueAccent,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  widget.videoTitle,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                SizedBox(height: 10),
+                Text(widget.videoDescription),
+              ],
+            ),
           ),
         ),
       ),
