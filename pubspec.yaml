@@ -64,6 +64,14 @@ flutter:
   assets:
      - assets/background.png
      - assets/Illustration.png
+     - assets/bank_background.png
+     - assets/curve.png
+     - assets/lines2.png
+     - assets/bank_icon11.png
+     - assets/saving1.png
+     - assets/current1.png
+     - assets/credit1.png
+     - assets/upi1.png
 #     - assets/welcome.png
 #     - assets/login.png
 

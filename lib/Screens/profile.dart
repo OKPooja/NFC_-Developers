@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../util/colors.dart';
+
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
@@ -12,4 +14,5 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return const Text("profile page");
   }
+
 }
