@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:need/Screens/Course/Mutual%20funds/showlevels.dart';
+import 'package:need/Screens/Course/Share%20market/showlevels.dart';
 
 class CourseCard extends StatelessWidget {
   final String imageUrl, title;
@@ -14,6 +15,12 @@ class CourseCard extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => ShowLevelsMutualfunds()));
+              }
+              else if(title == "Share Market"){
+                Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ShareMarketLevels()));
               }
             },
             child: Container(

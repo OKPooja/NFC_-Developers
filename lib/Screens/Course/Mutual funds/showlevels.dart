@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:need/Screens/Course/Mutual%20funds/Mlevel2.dart';
-
+import 'package:need/Screens/Course/Mutual%20funds/Mlevel3.dart';
 import 'Mlevel1.dart';
 
 class ShowLevelsMutualfunds extends StatefulWidget {
@@ -15,11 +15,14 @@ class _ShowLevelsMutualfundsState extends State<ShowLevelsMutualfunds> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: const [
-            Mlevel1(),
-            Mlevel2(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: const [
+              Mlevel1(),
+              Mlevel2(),
+              Mlevel3(),
+            ],
+          ),
         ),
       ),
     );

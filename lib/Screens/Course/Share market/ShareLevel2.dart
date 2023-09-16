@@ -2,105 +2,105 @@ import 'package:flutter/material.dart';
 import 'package:need/Screens/Course/quiz.dart';
 import 'package:need/Screens/Course/youtube_player.dart';
 
-class Mlevel2 extends StatefulWidget {
-  const Mlevel2({super.key});
+class SLevel2 extends StatefulWidget {
+  const SLevel2({super.key});
 
   @override
-  State<Mlevel2> createState() => _Mlevel2State();
+  State<SLevel2> createState() => _SLevel2State();
 }
 
-class _Mlevel2State extends State<Mlevel2> {
+class _SLevel2State extends State<SLevel2> {
   @override
 
-  List<Map<String, dynamic>> Mlevel2Q = [
+  List<Map<String, dynamic>> SLevel2Q = [
   {
-    'question': 'What is the difference between a load and a no-load mutual fund?',
+    'question': 'What is a P/E ratio in the context of stocks?',
     'answers': [
-      {'answerText': 'A load fund charges a sales commission or fee, while a no-load fund does not.', 'score': true},
-      {'answerText': 'A load fund provides higher returns, while a no-load fund is more stable.', 'score': false},
-      {'answerText': 'A load fund has higher expense ratios, while a no-load fund has lower fees.', 'score': false},
-      {'answerText': 'A load fund is riskier, while a no-load fund is more conservative.', 'score': false},
+      {'answerText': 'Price-to-Earnings ratio - It measures the valuation of a company by dividing its share price by earnings per share.', 'score': true},
+      {'answerText': 'Percentage of Earnings ratio - It indicates the portion of profits distributed to shareholders.', 'score': false},
+      {'answerText': 'Profit and Equity ratio - It shows the relationship between company profits and shareholder equity.', 'score': false},
+      {'answerText': 'Price-to-Expense ratio - It compares the price of a stock to its operating expenses.', 'score': false},
     ],
   },
   {
-    'question': 'What is a capital gains distribution in a mutual fund?',
+    'question': 'What is a dividend yield?',
     'answers': [
-      {'answerText': 'It is the profit earned by the fund manager.', 'score': false},
-      {'answerText': 'It is the total amount of money invested in the fund.', 'score': false},
-      {'answerText': 'It is the distribution of profits made from the sale of securities in the fund\'s portfolio.', 'score': true},
-      {'answerText': 'It is the interest earned on the fund.', 'score': false},
+      {'answerText': 'The annual dividend income earned per share, expressed as a percentage of the stock\'s current market price.', 'score': true},
+      {'answerText': 'The increase in a stock\'s price over a given period of time.', 'score': false},
+      {'answerText': 'The total value of all dividends paid out by a company in a year.', 'score': false},
+      {'answerText': 'The percentage of profits reinvested by a company.', 'score': false},
     ],
   },
   {
-    'question': 'What is the role of a custodian in a mutual fund?',
+    'question': 'What does the term "market volatility" refer to?',
     'answers': [
-      {'answerText': 'To manage the fund\'s investments and make buy/sell decisions.', 'score': false},
-      {'answerText': 'To handle administrative tasks and hold the fund\'s assets in safekeeping.', 'score': true},
-      {'answerText': 'To provide advice to investors on which funds to choose.', 'score': false},
-      {'answerText': 'To market and promote the mutual fund.', 'score': false},
+      {'answerText': 'The degree of variation in trading price series over a certain period of time.', 'score': true},
+      {'answerText': 'The rate at which stocks are bought and sold in the market.', 'score': false},
+      {'answerText': 'The level of government intervention in the stock market.', 'score': false},
+      {'answerText': 'The percentage of investors holding a particular stock.', 'score': false},
     ],
   },
   {
-    'question': 'What is an expense ratio cap in a mutual fund?',
+    'question': 'What is a stock exchange index?',
     'answers': [
-      {'answerText': 'It is the maximum limit on investment.', 'score': false},
-      {'answerText': 'It represents the cost of managing the fund, expressed as a percentage of the fund\'s average assets, but with an upper limit.', 'score': true},
-      {'answerText': 'It is the total amount of money invested in the fund.', 'score': false},
-      {'answerText': 'It is the dividend paid to the investors.', 'score': false},
+      {'answerText': 'A measurement of the performance of a specific group of stocks in a stock market.', 'score': true},
+      {'answerText': 'The average price of all stocks listed on a particular exchange.', 'score': false},
+      {'answerText': 'A list of companies that are about to go public.', 'score': false},
+      {'answerText': 'An index used to calculate taxes on stock market transactions.', 'score': false},
     ],
   },
   {
-    'question': 'What is a balanced fund in mutual funds?',
+    'question': 'What is the purpose of a stop-loss order in stock trading?',
     'answers': [
-      {'answerText': 'A fund that invests primarily in stocks.', 'score': false},
-      {'answerText': 'A fund that invests primarily in fixed-income securities.', 'score': false},
-      {'answerText': 'A fund that combines both stocks and bonds in its portfolio.', 'score': true},
-      {'answerText': 'A fund that focuses on short-term investments.', 'score': false},
+      {'answerText': 'To limit potential losses by automatically selling a stock if its price falls to a certain level.', 'score': true},
+      {'answerText': 'To buy a stock when its price is at its lowest point.', 'score': false},
+      {'answerText': 'To prevent unauthorized access to a trading account.', 'score': false},
+      {'answerText': 'To initiate a short selling strategy.', 'score': false},
     ],
   },
   {
-    'question': 'What is a sector-specific fund?',
+    'question': 'What is a blue-sky law in the context of securities?',
     'answers': [
-      {'answerText': 'A fund that invests in a specific industry or sector, such as technology or healthcare.', 'score': true},
-      {'answerText': 'A fund that diversifies across multiple industries.', 'score': false},
-      {'answerText': 'A fund that only invests in government securities.', 'score': false},
-      {'answerText': 'A fund that focuses on international investments.', 'score': false},
+      {'answerText': 'State regulations designed to protect investors from securities fraud.', 'score': true},
+      {'answerText': 'Federal regulations governing the issuance and trading of stocks.', 'score': false},
+      {'answerText': 'A law prohibiting speculative trading in certain industries.', 'score': false},
+      {'answerText': 'A legal framework for managing corporate mergers and acquisitions.', 'score': false},
     ],
   },
   {
-    'question': 'What is the difference between growth and value funds?',
+    'question': 'What is insider trading?',
     'answers': [
-      {'answerText': 'Growth funds aim for capital appreciation and invest in stocks with high growth potential, while value funds seek undervalued stocks with strong fundamentals.', 'score': true},
-      {'answerText': 'Growth funds provide higher dividends, while value funds have higher volatility.', 'score': false},
-      {'answerText': 'Growth funds have lower risk, while value funds have higher risk.', 'score': false},
-      {'answerText': 'Growth funds invest primarily in fixed-income securities, while value funds focus on equities.', 'score': false},
+      {'answerText': 'Buying or selling a security in breach of a fiduciary duty or other relationship of trust and confidence, while in possession of material, nonpublic information about the security.', 'score': true},
+      {'answerText': 'Trading of stocks by high-level executives of a company.', 'score': false},
+      {'answerText': 'Trading stocks based on public information available to all investors.', 'score': false},
+      {'answerText': 'Investing in stocks of companies with low market capitalization.', 'score': false},
     ],
   },
   {
-    'question': 'What is a 12b-1 fee in a mutual fund?',
+    'question': 'What does the term "blue-collar investor" refer to?',
     'answers': [
-      {'answerText': 'It is the minimum amount required to start investing.', 'score': false},
-      {'answerText': 'It represents the cost of managing the fund, expressed as a percentage of the fund\'s average assets.', 'score': false},
-      {'answerText': 'It is an annual fee charged by some funds to cover marketing and distribution expenses.', 'score': true},
-      {'answerText': 'It is the interest earned on the fund.', 'score': false},
+      {'answerText': 'An individual who works in a manual or industrial job and invests in the stock market.', 'score': true},
+      {'answerText': 'An investor who specializes in trading blue-chip stocks.', 'score': false},
+      {'answerText': 'A person who invests in real estate rather than stocks.', 'score': false},
+      {'answerText': 'An investor with limited knowledge of the stock market.', 'score': false},
     ],
   },
   {
-    'question': 'What is a prospectus in mutual funds?',
+    'question': 'What is a mutual fund in the context of stock market investing?',
     'answers': [
-      {'answerText': 'A document that provides detailed information about a mutual fund, including its investment objectives, risks, fees, and past performance.', 'score': true},
-      {'answerText': 'A report on the fund\'s annual performance.', 'score': false},
-      {'answerText': 'A statement of account sent to investors.', 'score': false},
-      {'answerText': 'A legal agreement between the fund manager and the investor.', 'score': false},
+      {'answerText': 'A professionally managed investment fund that pools money from many investors to purchase securities.', 'score': true},
+      {'answerText': 'A fund that invests exclusively in government bonds.', 'score': false},
+      {'answerText': 'A fund that focuses on short-term trading of stocks.', 'score': false},
+      {'answerText': 'A fund that invests primarily in real estate properties.', 'score': false},
     ],
   },
   {
-    'question': 'What is a back-end load in a mutual fund?',
+    'question': 'What is a stock option?',
     'answers': [
-      {'answerText': 'A fee charged when investors sell their shares, typically on a sliding scale that decreases over time.', 'score': true},
-      {'answerText': 'A fee charged when investors buy new shares.', 'score': false},
-      {'answerText': 'A fee charged annually to cover marketing and distribution expenses.', 'score': false},
-      {'answerText': 'A fee charged when investors hold their shares for a specified period.', 'score': false},
+      {'answerText': 'A contract that gives the holder the right to buy or sell a specific quantity of a stock at a particular price.', 'score': true},
+      {'answerText': 'A type of preferred stock issued by a company.', 'score': false},
+      {'answerText': 'A government-issued bond that can be converted into shares of stock.', 'score': false},
+      {'answerText': 'A type of mutual fund that focuses on technology stocks.', 'score': false},
     ],
   },
 ];
@@ -116,8 +116,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://youtu.be/i2OcUvUfFJM?si=maU8dDl0UPaw5TQU',
-                        videoTitle: 'Basics of Mutual Funds Episode 1',
+                            'https://youtu.be/iasvhMVhoSM?feature=shared',
+                        videoTitle: 'What is Demat Account | How to choose a broker',
                         videoDescription:
                             'Blog')));
                 },
@@ -129,7 +129,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/i2OcUvUfFJM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCI0HJShXs9OTihw0kXLdzJYVDk-w",
+                          "https://i.ytimg.com/vi/iasvhMVhoSM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDa9vimaXCjlnMf8wyxmxfjb_obxQ",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -141,7 +141,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Basics of Mutual Funds Episode 1',
+                              'What is Demat Account | How to choose a broker',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -169,8 +169,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?si=BkDmfsTnztfkwdRI&v=pMZSfei7qkM',
-                        videoTitle: 'Active and Passive Funds: Episode-2 - Basics of Mutual Funds with Groww',
+                            'https://www.youtube.com/watch?v=03s4PhapyUs&list=PLfEVwubAeLh9Ua43yskVcQMf2CWTQy3xr&index=11',
+                        videoTitle: 'Types of stocks',
                         videoDescription:
                             'Blog')));
                 },
@@ -182,7 +182,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/pMZSfei7qkM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzrAS76EVT8drN-G1CBsBsE11sPQ",
+                          "https://i.ytimg.com/vi/03s4PhapyUs/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcdBWAqHBqZG9lv0TdQWyZtc5o0A",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -194,7 +194,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Active and Passive Funds: Episode-2',
+                              'Types of stocks',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -202,7 +202,7 @@ class _Mlevel2State extends State<Mlevel2> {
                             ),
                             SizedBox(height: 5.0),
                             Text(
-                              'Active and Passive Funds: Episode-2 - Basics of Mutual Funds with Groww',
+                              'bassss',
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontSize: 14,
@@ -221,8 +221,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?v=FxE4RvAh7L4',
-                        videoTitle: 'Basics of Mutual Funds: Episode:3 Types of Equity Funds',
+                            'https://youtu.be/UVCjBtMwg8g?feature=shared',
+                        videoTitle: 'How to buy your first stock in India',
                         videoDescription:
                             'Blog')));
                 },
@@ -234,7 +234,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/vi/FxE4RvAh7L4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-VmR-i0uVAnjc0PHUcxhNulndcg",
+                          "https://i.ytimg.com/vi/UVCjBtMwg8g/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBC5DGj47E8o3LPkxwdXgk3bF0icg",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -246,7 +246,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              '',
+                              'How to buy your first stock in India',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -254,7 +254,7 @@ class _Mlevel2State extends State<Mlevel2> {
                             ),
                             SizedBox(height: 5.0),
                             Text(
-                              'Basics of Mutual Funds: Episode #3 Types of Equity Funds',
+                              'How to buy your first stock in India',
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontSize: 14,
@@ -274,8 +274,8 @@ class _Mlevel2State extends State<Mlevel2> {
                 MaterialPageRoute(
                     builder: (context) => YouTubePlayer(
                         videoUrl:
-                            'https://www.youtube.com/watch?v=1KMMqlSyiDE',
-                        videoTitle: 'Large Cap, Mid Cap & Small Cap Stocks & Mutual Funds',
+                            'httpshttps://www.youtube.com/watch?v=xsAO_c_5sXk',
+                        videoTitle: 'Your 1st Step in Stock Market',
                         videoDescription:
                             'Blog')));
                 },
@@ -287,7 +287,7 @@ class _Mlevel2State extends State<Mlevel2> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          "https://i.ytimg.com/an_webp/1KMMqlSyiDE/mqdefault_6s.webp?du=3000&sqp=CKuJkqgG&rs=AOn4CLAs3UcLysNMgVbamBhYHq_2CZCDSg",
+                          "https://i.ytimg.com/vi/xsAO_c_5sXk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDqTsgaIRNY5aa-TaxW8DBaVmo8Mg",
                           height: 90,
                           width: 120,
                           fit: BoxFit.cover,
@@ -299,7 +299,7 @@ class _Mlevel2State extends State<Mlevel2> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: const <Widget>[
                             Text(
-                              'Large Cap, Mid Cap & Small Cap Stocks & Mutual Funds',
+                              'Your 1st Step in Stock Market',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -307,7 +307,7 @@ class _Mlevel2State extends State<Mlevel2> {
                             ),
                             SizedBox(height: 5.0),
                             Text(
-                              'Basics of Mutual Funds: Episode #3 Types of Equity Funds',
+                              'Your 1st Step in Stock Market',
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontSize: 14,
@@ -325,7 +325,7 @@ class _Mlevel2State extends State<Mlevel2> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Quiz(questions: Mlevel2Q),
+                builder: (context) => Quiz(questions: SLevel2Q),
               ),
             );
           },
